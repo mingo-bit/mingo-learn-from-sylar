@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
+string.h
+-
+stdint.h
+-
+string
+-
+list
+-
+map
+-
+memory
+-
+vector
+-
+sstream
+-
+fstream
+-
+cassert
+-
+iostream
+-
+
+/home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp
+iostream
+-
+../mingo/log.h
+/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
+

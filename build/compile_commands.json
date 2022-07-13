@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
+  "command": "/usr/bin/c++      -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/test.dir/tests/test.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp",
+  "file": "/home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp"
+},
+{
+  "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
+  "command": "/usr/bin/c++  -Dmingo_EXPORTS  -fPIC   -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/mingo.dir/mingo/log.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp",
+  "file": "/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp"
+}
+]

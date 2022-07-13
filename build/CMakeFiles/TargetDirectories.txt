@@ -1,0 +1,4 @@
+/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/rebuild_cache.dir
+/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/edit_cache.dir
+/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/test.dir
+/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir
