@@ -4,3 +4,6 @@
 CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/log.cpp
 CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/log.h
 
+CMakeFiles/mingo.dir/mingo/util.cpp.o: ../mingo/util.cpp
+CMakeFiles/mingo.dir/mingo/util.cpp.o: ../mingo/util.h
+

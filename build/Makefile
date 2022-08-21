@@ -166,6 +166,33 @@ mingo/log.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/log.cpp.s
 .PHONY : mingo/log.cpp.s
 
+mingo/util.o: mingo/util.cpp.o
+
+.PHONY : mingo/util.o
+
+# target to build an object file
+mingo/util.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/util.cpp.o
+.PHONY : mingo/util.cpp.o
+
+mingo/util.i: mingo/util.cpp.i
+
+.PHONY : mingo/util.i
+
+# target to preprocess a source file
+mingo/util.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/util.cpp.i
+.PHONY : mingo/util.cpp.i
+
+mingo/util.s: mingo/util.cpp.s
+
+.PHONY : mingo/util.s
+
+# target to generate assembly for a file
+mingo/util.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/util.cpp.s
+.PHONY : mingo/util.cpp.s
+
 tests/test.o: tests/test.cpp.o
 
 .PHONY : tests/test.o
@@ -206,6 +233,9 @@ help:
 	@echo "... mingo/log.o"
 	@echo "... mingo/log.i"
 	@echo "... mingo/log.s"
+	@echo "... mingo/util.o"
+	@echo "... mingo/util.i"
+	@echo "... mingo/util.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"

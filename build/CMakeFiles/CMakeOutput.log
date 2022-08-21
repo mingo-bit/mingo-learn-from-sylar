@@ -28,25 +28,25 @@ The CXX compiler identification is GNU, found in "/home/mingo/workspace/mingo_se
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_2d208/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_2d208.dir/build.make CMakeFiles/cmTC_2d208.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_7a7ad/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_7a7ad.dir/build.make CMakeFiles/cmTC_7a7ad.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2d208.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2d208.dir/testCCompiler.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_2d208
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d208.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2d208.dir/testCCompiler.c.o  -o cmTC_2d208 
+Building C object CMakeFiles/cmTC_7a7ad.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7a7ad.dir/testCCompiler.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_7a7ad
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a7ad.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7a7ad.dir/testCCompiler.c.o  -o cmTC_7a7ad 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_f16b5/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_f16b5.dir/build.make CMakeFiles/cmTC_f16b5.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_5ba24/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_5ba24.dir/build.make CMakeFiles/cmTC_5ba24.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -56,8 +56,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' 
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxMZ44m.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYssFEp.s
 GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
 
@@ -77,15 +77,15 @@ GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 58794417508a053c2d813aa212cbee7e
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o /tmp/ccxMZ44m.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o /tmp/ccYssFEp.s
 GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_f16b5
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f16b5.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o  -o cmTC_f16b5 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_5ba24
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ba24.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o  -o cmTC_5ba24 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -98,9 +98,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f16b5' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPGmA8w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f16b5 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f16b5' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5ba24' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPpPJyZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5ba24 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5ba24' '-mtune=generic' '-march=x86-64'
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -123,11 +123,11 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_f16b5/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_f16b5.dir/build.make CMakeFiles/cmTC_f16b5.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_5ba24/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_5ba24.dir/build.make CMakeFiles/cmTC_5ba24.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -137,8 +137,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxMZ44m.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYssFEp.s]
   ignore line: [GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP]
   ignore line: []
@@ -158,15 +158,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 58794417508a053c2d813aa212cbee7e]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o /tmp/ccxMZ44m.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o /tmp/ccYssFEp.s]
   ignore line: [GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_f16b5]
-  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f16b5.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o  -o cmTC_f16b5 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_5ba24]
+  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ba24.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o  -o cmTC_5ba24 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -179,13 +179,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f16b5' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPGmA8w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f16b5 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5ba24' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPpPJyZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5ba24 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccPGmA8w.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccPpPJyZ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -204,7 +204,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f16b5] ==> ignore
+    arg [cmTC_5ba24] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> ignore
@@ -216,7 +216,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [CMakeFiles/cmTC_f16b5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_5ba24.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -248,14 +248,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_d1f73/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_d1f73.dir/build.make CMakeFiles/cmTC_d1f73.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_b18af/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_b18af.dir/build.make CMakeFiles/cmTC_b18af.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d1f73.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_d1f73.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_d1f73
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1f73.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d1f73.dir/feature_tests.c.o  -o cmTC_d1f73 
+Building C object CMakeFiles/cmTC_b18af.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_b18af.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b18af
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b18af.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b18af.dir/feature_tests.c.o  -o cmTC_b18af 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -268,14 +268,14 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_675e6/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_675e6.dir/build.make CMakeFiles/cmTC_675e6.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_c3ae1/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_c3ae1.dir/build.make CMakeFiles/cmTC_c3ae1.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_675e6.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_675e6.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_675e6
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_675e6.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_675e6.dir/feature_tests.c.o  -o cmTC_675e6 
+Building C object CMakeFiles/cmTC_c3ae1.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c3ae1.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c3ae1
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3ae1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c3ae1.dir/feature_tests.c.o  -o cmTC_c3ae1 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -288,14 +288,14 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_5ad0c/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_5ad0c.dir/build.make CMakeFiles/cmTC_5ad0c.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_94205/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_94205.dir/build.make CMakeFiles/cmTC_94205.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5ad0c.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_5ad0c.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5ad0c
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ad0c.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5ad0c.dir/feature_tests.c.o  -o cmTC_5ad0c 
+Building C object CMakeFiles/cmTC_94205.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_94205.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_94205
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94205.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_94205.dir/feature_tests.c.o  -o cmTC_94205 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -306,25 +306,25 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_09034/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_09034.dir/build.make CMakeFiles/cmTC_09034.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_90d4e/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_90d4e.dir/build.make CMakeFiles/cmTC_90d4e.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_09034.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_09034.dir/testCXXCompiler.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_09034
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09034.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_09034.dir/testCXXCompiler.cxx.o  -o cmTC_09034 
+Building CXX object CMakeFiles/cmTC_90d4e.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_90d4e.dir/testCXXCompiler.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_90d4e
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90d4e.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_90d4e.dir/testCXXCompiler.cxx.o  -o cmTC_90d4e 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_54193/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_54193.dir/build.make CMakeFiles/cmTC_54193.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_d21f2/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_d21f2.dir/build.make CMakeFiles/cmTC_d21f2.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -334,8 +334,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' 
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCh6D1R.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccM4GQXk.s
 GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
 
@@ -359,15 +359,15 @@ GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 118e824ee50d24f402f1f2e0e1ebfb12
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccCh6D1R.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccM4GQXk.s
 GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_54193
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54193.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_54193 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_d21f2
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d21f2.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d21f2 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -380,9 +380,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_54193' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWf2CXK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_54193 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_54193' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d21f2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDOn1G5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d21f2 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d21f2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -411,11 +411,11 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_54193/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_54193.dir/build.make CMakeFiles/cmTC_54193.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_d21f2/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_d21f2.dir/build.make CMakeFiles/cmTC_d21f2.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -425,8 +425,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCh6D1R.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccM4GQXk.s]
   ignore line: [GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP]
   ignore line: []
@@ -450,15 +450,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 118e824ee50d24f402f1f2e0e1ebfb12]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccCh6D1R.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccM4GQXk.s]
   ignore line: [GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_54193]
-  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54193.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_54193 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_d21f2]
+  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d21f2.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d21f2 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -471,13 +471,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_54193' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWf2CXK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_54193 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d21f2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDOn1G5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d21f2 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccWf2CXK.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccDOn1G5.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -496,7 +496,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_54193] ==> ignore
+    arg [cmTC_d21f2] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> ignore
@@ -508,7 +508,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [CMakeFiles/cmTC_54193.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_d21f2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -536,14 +536,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_a6140/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_a6140.dir/build.make CMakeFiles/cmTC_a6140.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_60fa9/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_60fa9.dir/build.make CMakeFiles/cmTC_60fa9.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a6140.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_a6140.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a6140
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6140.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a6140.dir/feature_tests.cxx.o  -o cmTC_a6140 
+Building CXX object CMakeFiles/cmTC_60fa9.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_60fa9.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_60fa9
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60fa9.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_60fa9.dir/feature_tests.cxx.o  -o cmTC_60fa9 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -609,14 +609,14 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_0037e/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_0037e.dir/build.make CMakeFiles/cmTC_0037e.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_45d3a/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_45d3a.dir/build.make CMakeFiles/cmTC_45d3a.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0037e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_0037e.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_0037e
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0037e.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0037e.dir/feature_tests.cxx.o  -o cmTC_0037e 
+Building CXX object CMakeFiles/cmTC_45d3a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_45d3a.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_45d3a
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45d3a.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_45d3a.dir/feature_tests.cxx.o  -o cmTC_45d3a 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -682,14 +682,14 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_5bfc7/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_5bfc7.dir/build.make CMakeFiles/cmTC_5bfc7.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_8ed97/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_8ed97.dir/build.make CMakeFiles/cmTC_8ed97.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5bfc7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_5bfc7.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5bfc7
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bfc7.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5bfc7.dir/feature_tests.cxx.o  -o cmTC_5bfc7 
+Building CXX object CMakeFiles/cmTC_8ed97.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_8ed97.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8ed97
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ed97.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8ed97.dir/feature_tests.cxx.o  -o cmTC_8ed97 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -755,14 +755,14 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_8c0f1/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_8c0f1.dir/build.make CMakeFiles/cmTC_8c0f1.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_58fe5/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_58fe5.dir/build.make CMakeFiles/cmTC_58fe5.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8c0f1.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_8c0f1.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8c0f1
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c0f1.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8c0f1.dir/feature_tests.cxx.o  -o cmTC_8c0f1 
+Building CXX object CMakeFiles/cmTC_58fe5.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_58fe5.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_58fe5
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58fe5.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_58fe5.dir/feature_tests.cxx.o  -o cmTC_58fe5 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 
@@ -828,14 +828,14 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_91841/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_91841.dir/build.make CMakeFiles/cmTC_91841.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_8eeee/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_8eeee.dir/build.make CMakeFiles/cmTC_8eeee.dir/build
 gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_91841.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_91841.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_91841
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91841.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_91841.dir/feature_tests.cxx.o  -o cmTC_91841 
+Building CXX object CMakeFiles/cmTC_8eeee.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_8eeee.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8eeee
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8eeee.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8eeee.dir/feature_tests.cxx.o  -o cmTC_8eeee 
 gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
 
 

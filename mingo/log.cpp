@@ -346,5 +346,47 @@ std::string LogFormatter::format(LogEvent::ptr event)
     return ss.str();
 } 
 
+LoggerManager::LoggerManager()
+{
+    init();
+}
+
+void LoggerManager::ensureGlobalLoggerExists()
+{
+    // std::map 不能够用 operator[] 来查询键是否存在，因为该操作符会获取不存在的键时会创建新节点
+    auto iter = m_loggers.find("root");
+    if (iter == m_loggers.end())
+    { // 日志器 map 里不存在全局日志器
+        auto global_logger = std::make_shared<Logger>();
+        global_logger->addAppender(std::make_shared<StdoutLogAppender>());
+        m_loggers.insert(std::make_pair("root", std::move(global_logger)));
+    }
+    else if (!iter->second)
+    { // 存在同名的键，但指针为空
+        iter->second = std::make_shared<Logger>();
+        iter->second->addAppender(std::make_shared<StdoutLogAppender>());
+    }
+}
+
+void LoggerManager::init()
+{
+
+}
+
+Logger::ptr LoggerManager::getLogger(const std::string& name)
+{
+    auto iter = m_loggers.find(name);
+    if (iter == m_loggers.end())
+    {
+        // 日志器不存在就返回全局默认日志器
+        return m_loggers.find("root")->second;
+    }
+    return iter->second;
+}
+
+Logger::ptr LoggerManager::getGlobal()
+{
+    return getLogger("root");
+}
 
 }

@@ -152,5 +152,24 @@ private:
     std::list<LogAppender::ptr> m_appenders;    //Appender列表
 };
 
+//日志管理器
+class LoggerManager{
+public:
+    typedef std::shared_ptr<LoggerManager> ptr;
+
+    LoggerManager();
+    // 传入日志器名称来获取日志器,如果不存在,返回全局日志器
+    Logger::ptr getLogger(const std::string& name);
+    //获取全局日志器
+    Logger::ptr getGlobal();
+
+    void init();
+    void ensureGlobalLoggerExists(); // 确保存在全局日志器
+
+private:
+    std::map<std::string, Logger::ptr> m_loggers;
+    Logger::ptr m_root;
+};
+
 }
 #endif

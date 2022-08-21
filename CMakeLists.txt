@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(LIB_SRC
      mingo/log.cpp
+     mingo/util.cpp
      )
 
 add_library(mingo SHARED ${LIB_SRC}) 
