@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/config.cpp.o"
   "/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/log.cpp.o"
   "/home/mingo/workspace/mingo_server_copy_sylar/mingo/util.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/util.cpp.o"
   )

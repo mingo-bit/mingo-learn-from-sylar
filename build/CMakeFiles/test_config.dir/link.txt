@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/test_config.dir/tests/test_config.cpp.o  -o ../bin/test_config -Wl,-rpath,/home/mingo/workspace/mingo_server_copy_sylar/lib ../lib/libmingo.so 

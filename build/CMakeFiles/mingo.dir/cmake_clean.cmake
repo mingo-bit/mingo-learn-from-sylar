@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mingo.dir/mingo/log.cpp.o"
   "CMakeFiles/mingo.dir/mingo/util.cpp.o"
+  "CMakeFiles/mingo.dir/mingo/config.cpp.o"
   "../lib/libmingo.pdb"
   "../lib/libmingo.so"
 )

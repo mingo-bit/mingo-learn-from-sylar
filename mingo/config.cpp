@@ -3,6 +3,6 @@
 
 namespace mingo {
 
-    
+Config::ConfigVarMap Config::s_datas;    
 
-};
+}

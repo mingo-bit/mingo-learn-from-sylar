@@ -9,12 +9,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(LIB_SRC
      mingo/log.cpp
      mingo/util.cpp
+     mingo/config.cpp
      )
 
 add_library(mingo SHARED ${LIB_SRC}) 
-add_executable(test tests/test.cpp)
-add_dependencies(test mingo)
-target_link_libraries(test mingo)
+add_executable(test_config tests/test_config.cpp)
+add_dependencies(test_config mingo)
+target_link_libraries(test_config mingo)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp
-config.h
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/config.h
-log.h
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
-
 /home/mingo/workspace/mingo_server_copy_sylar/mingo/config.h
 boost/lexical_cast.hpp
 -
@@ -27,10 +21,6 @@ sstream
 -
 string
 -
-
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp
-log.h
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
 
 /home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
 string.h
@@ -55,4 +45,24 @@ cassert
 -
 iostream
 -
+
+/home/mingo/workspace/mingo_server_copy_sylar/mingo/util.h
+pthread.h
+-
+stdint.h
+-
+sys/syscall.h
+-
+sys/types.h
+-
+unistd.h
+-
+
+/home/mingo/workspace/mingo_server_copy_sylar/tests/test_config.cpp
+../mingo/log.h
+/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
+../mingo/config.h
+/home/mingo/workspace/mingo_server_copy_sylar/mingo/config.h
+../mingo/util.h
+/home/mingo/workspace/mingo_server_copy_sylar/mingo/util.h
 

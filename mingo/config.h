@@ -5,6 +5,7 @@
 #include <exception>
 #include <iostream>
 #include <memory>
+#include <map>
 #include <sstream>
 #include <string>
 
@@ -19,9 +20,8 @@ public:
     ConfigVarBase(const std::string& name, const std::string& description)
         : m_name(name), m_description(description)
     {
-        std::transform(m_name.begin(), m_name.end(), m_name.begin(), ::tolower);
     }
-    virtual ~ConfigVarBase() = default;
+    virtual ~ConfigVarBase() {}
 
     const std::string& getName() const { return m_name;}
     const std::string& getDescription() const { return m_description;}
@@ -57,7 +57,7 @@ public:
     std::string toString() const override
     {
         try {
-
+           return boost::lexical_cast<std::string>(m_value);
         }
         catch (std::exception& e)
         {
@@ -73,7 +73,7 @@ public:
     bool fromString(const std::string& val) override
     {
         try {
-
+            m_value = boost::lexical_cast<T>(val);
         }
         catch (std::exception& e)
         {
@@ -87,7 +87,6 @@ public:
 
 private:
     T m_value; // 配置项的值
-    std::map<uint64_t, onChangeCallback> m_callback_map;
 };
 
 class Config
@@ -95,43 +94,45 @@ class Config
 public:
     typedef std::map<std::string, ConfigVarBase::ptr> ConfigVarMap;
 
-    static ConfigVarBase::Ptr Lookup(const std::string& name)
+    // 创建配置项
+    template<class T>
+    static typename ConfigVar<T>::ptr Lookup(const std::string& name, const T& value, const std::string description = "")
     {
-        ConfigVarMap& s_data = GetData();
-        auto iter = s_data.find(name);
-        if (iter == s_data.end())
+        auto iter = Lookup<T>(name);
+        if (iter)
         {
-            return nullptr;
+            std::cout << "Lookup-name = " << name << "exits.";
+            return iter;
         }
-        return iter->second;
+        
+        if (name.find_first_not_of("abcdefghijklmnopqrstuvwxyz._012345678") != std::string::npos)
+        {
+            std::cerr << "Lookup name invalid: " << name;
+            throw std::invalid_argument(name);
+        }
+
+        typename ConfigVar<T>::ptr v(new ConfigVar<T>(name, value, description));
+        s_datas[name] = v;
+
+        return v;
     }
 
     // 查找配置项，返回指定类型的ConfigVar智能指针
     template <class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string& name)
     {
-        auto base_ptr = Lookup(name);
-        if (!base_ptr)
+        auto base_ptr = s_datas.find(name);
+        if (base_ptr == s_datas.end())
         {
             return nullptr;
         }
         // 配置项存在，尝试转换成指定的类型
-        auto ptr = std::dynamic_pointer_cast<ConfigVar<T>>(base_ptr);
-
-        if (!ptr)
-        {
-            std::cerr << "Config::Lookup<T> exception, 无法转换类型" << std::endl;
-            throw std::bad_cast();
-        }
-        return ptr;
+        return std::dynamic_pointer_cast<ConfigVar<T> >(base_ptr->second);
     }
 
 private:
-    static ConfigVarMap& getData()
-    {
-        static ConfigVarMap s_data;
-        return s_data;
-    }
+    static ConfigVarMap s_datas; // 配置项表
 };
+}
 
 #endif
