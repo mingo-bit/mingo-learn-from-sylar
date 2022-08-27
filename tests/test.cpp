@@ -1,6 +1,7 @@
 #include <iostream>
-#include "../mingo/log.h"
-#include "../mingo/util.h"
+#include "mingo/log.h"
+#include "mingo/util.h"
+#include "mingo/config.h"
 
 int main(int argv, char** argc)
 {

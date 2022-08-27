@@ -48,6 +48,7 @@ public:
     uint32_t getFiberId() const { return m_fiberId; }
     uint32_t getTime() const { return m_time; }
     const std::string& getContent() const { return m_content; }
+    void setContent(const std::string& content) { m_content  = content; }
     LogLevel::Level getLevel() const { return m_level; }
     
     void setLevel(LogLevel::Level level) { m_level = level; }

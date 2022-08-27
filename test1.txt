@@ -1,1 +1,14 @@
-[2022-08-24 23:03:27]  [T:9403 F:1]  [default]  [DEBUG]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config.cpp: 20>  8080
+[2022-08-25 22:42:49]  [T:5360 F:1]  [default]  [DEBUG]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config.cpp: 20>  8080
+[2022-08-25 22:43:32]  [T:5362 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>  system - 3 - 0
+[2022-08-25 22:43:32]  [T:5362 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>      0 - 4 - 1
+[2022-08-25 22:43:32]  [T:5362 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>          port - 2 - 2
+[2022-08-25 22:43:32]  [T:5362 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>              9090 - 2 - 3
+[2022-08-25 22:43:32]  [T:5362 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>          value - 2 - 2
+[2022-08-25 22:43:32]  [T:5362 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>              1.95 - 2 - 3
+[2022-08-25 22:51:29]  [T:5510 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>  system - 3 - 0
+[2022-08-25 22:51:29]  [T:5510 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>      0 - 4 - 1
+[2022-08-25 22:51:29]  [T:5510 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>          port - 2 - 2
+[2022-08-25 22:51:29]  [T:5510 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>              9090 - 2 - 3
+[2022-08-25 22:51:29]  [T:5510 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>          value - 2 - 2
+[2022-08-25 22:51:29]  [T:5510 F:1]  [default]  [INFO]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_yaml.cpp: 8>              1.95 - 2 - 3
+[2022-08-27 08:23:44]  [T:2080 F:1]  [default]  [DEBUG]  </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config.cpp: 20>  8080

@@ -114,17 +114,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_config
+# Target rules for targets named test_config3
 
 # Build rule for target.
-test_config: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_config
-.PHONY : test_config
+test_config3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_config3
+.PHONY : test_config3
 
 # fast build rule for target.
-test_config/fast:
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
-.PHONY : test_config/fast
+test_config3/fast:
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/build
+.PHONY : test_config3/fast
 
 #=============================================================================
 # Target rules for targets named mingo
@@ -220,32 +220,32 @@ mingo/util.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/util.cpp.s
 .PHONY : mingo/util.cpp.s
 
-tests/test_config.o: tests/test_config.cpp.o
+tests/test_config3.o: tests/test_config3.cpp.o
 
-.PHONY : tests/test_config.o
+.PHONY : tests/test_config3.o
 
 # target to build an object file
-tests/test_config.cpp.o:
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cpp.o
-.PHONY : tests/test_config.cpp.o
+tests/test_config3.cpp.o:
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/tests/test_config3.cpp.o
+.PHONY : tests/test_config3.cpp.o
 
-tests/test_config.i: tests/test_config.cpp.i
+tests/test_config3.i: tests/test_config3.cpp.i
 
-.PHONY : tests/test_config.i
+.PHONY : tests/test_config3.i
 
 # target to preprocess a source file
-tests/test_config.cpp.i:
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cpp.i
-.PHONY : tests/test_config.cpp.i
+tests/test_config3.cpp.i:
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/tests/test_config3.cpp.i
+.PHONY : tests/test_config3.cpp.i
 
-tests/test_config.s: tests/test_config.cpp.s
+tests/test_config3.s: tests/test_config3.cpp.s
 
-.PHONY : tests/test_config.s
+.PHONY : tests/test_config3.s
 
 # target to generate assembly for a file
-tests/test_config.cpp.s:
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cpp.s
-.PHONY : tests/test_config.cpp.s
+tests/test_config3.cpp.s:
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/tests/test_config3.cpp.s
+.PHONY : tests/test_config3.cpp.s
 
 # Help Target
 help:
@@ -255,7 +255,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test_config"
+	@echo "... test_config3"
 	@echo "... mingo"
 	@echo "... mingo/config.o"
 	@echo "... mingo/config.i"
@@ -266,9 +266,9 @@ help:
 	@echo "... mingo/util.o"
 	@echo "... mingo/util.i"
 	@echo "... mingo/util.s"
-	@echo "... tests/test_config.o"
-	@echo "... tests/test_config.i"
-	@echo "... tests/test_config.s"
+	@echo "... tests/test_config3.o"
+	@echo "... tests/test_config3.i"
+	@echo "... tests/test_config3.s"
 .PHONY : help
 
 

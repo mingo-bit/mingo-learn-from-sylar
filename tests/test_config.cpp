@@ -1,6 +1,6 @@
-#include "../mingo/log.h"
-#include "../mingo/config.h"
-#include "../mingo/util.h"
+#include "mingo/log.h"
+#include "mingo/config.h"
+#include "mingo/util.h"
 
 mingo::ConfigVar<int>::ptr init_value_config = 
     mingo::Config::Lookup("system.port", (int)8080, "system port");
@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 
 
     logger->log(event);
+
 
     return 0;
 }

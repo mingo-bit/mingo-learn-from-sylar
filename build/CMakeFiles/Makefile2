@@ -68,39 +68,39 @@ CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server_copy_sylar
 CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server_copy_sylar/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_config.dir
+# Target rules for target CMakeFiles/test_config3.dir
 
 # All Build rule for target.
-CMakeFiles/test_config.dir/all: CMakeFiles/mingo.dir/all
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/depend
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=5,6 "Built target test_config"
-.PHONY : CMakeFiles/test_config.dir/all
+CMakeFiles/test_config3.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/depend
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=5,6 "Built target test_config3"
+.PHONY : CMakeFiles/test_config3.dir/all
 
 # Include target in all.
-all: CMakeFiles/test_config.dir/all
+all: CMakeFiles/test_config3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_config.dir/rule: cmake_check_build_system
+CMakeFiles/test_config3.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_config.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_config3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_config.dir/rule
+.PHONY : CMakeFiles/test_config3.dir/rule
 
 # Convenience name for target.
-test_config: CMakeFiles/test_config.dir/rule
+test_config3: CMakeFiles/test_config3.dir/rule
 
-.PHONY : test_config
-
-# clean rule for target.
-CMakeFiles/test_config.dir/clean:
-	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/clean
-.PHONY : CMakeFiles/test_config.dir/clean
+.PHONY : test_config3
 
 # clean rule for target.
-clean: CMakeFiles/test_config.dir/clean
+CMakeFiles/test_config3.dir/clean:
+	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/clean
+.PHONY : CMakeFiles/test_config3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_config3.dir/clean
 
 .PHONY : clean
 

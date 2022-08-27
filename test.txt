@@ -1,3 +1,1 @@
-[2022-08-21 16:35:56] [DEBUG] </home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp: 12> [T:3112 F:1]	Hello World
-[2022-08-21 16:36:18] [DEBUG] </home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp: 12> [T:3122 F:1]	Hello World
-[2022-08-24 20:33:23] [DEBUG] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config.cpp: 15> [T:8732 F:1]	8080
+[2022-08-25 22:42:25] [DEBUG] </home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp: 13> [T:5356 F:1]	Hello World

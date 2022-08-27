@@ -6,7 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
+.././mingo/config.h
+boost/lexical_cast.hpp
+-
+exception
+-
+iostream
+-
+memory
+-
+vector
+-
+list
+-
+set
+-
+unordered_map
+-
+unordered_set
+-
+map
+-
+sstream
+-
+string
+-
+yaml-cpp/yaml.h
+-
+
+.././mingo/log.h
 string.h
 -
 stdint.h
@@ -30,7 +58,7 @@ cassert
 iostream
 -
 
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/util.h
+.././mingo/util.h
 pthread.h
 -
 stdint.h
@@ -45,8 +73,10 @@ unistd.h
 /home/mingo/workspace/mingo_server_copy_sylar/tests/test.cpp
 iostream
 -
-../mingo/log.h
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.h
-../mingo/util.h
-/home/mingo/workspace/mingo_server_copy_sylar/mingo/util.h
+mingo/log.h
+/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/log.h
+mingo/util.h
+/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/util.h
+mingo/config.h
+/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/config.h
 

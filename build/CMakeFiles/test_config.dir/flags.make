@@ -6,5 +6,5 @@ CXX_FLAGS =   -O0 -g -ggdb -Wno-unused-variable -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/mingo/workspace/mingo_server_copy_sylar/. 
 
