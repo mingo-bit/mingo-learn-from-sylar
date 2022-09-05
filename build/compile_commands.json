@@ -1,8 +1,13 @@
 [
 {
   "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
-  "command": "/usr/bin/c++   -I/home/mingo/workspace/mingo_server_copy_sylar/.    -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/test_config3.dir/tests/test_config3.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/tests/test_config3.cpp",
-  "file": "/home/mingo/workspace/mingo_server_copy_sylar/tests/test_config3.cpp"
+  "command": "/usr/bin/c++   -I/home/mingo/workspace/mingo_server_copy_sylar/.    -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/test_thread.dir/tests/test_thread.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/tests/test_thread.cpp",
+  "file": "/home/mingo/workspace/mingo_server_copy_sylar/tests/test_thread.cpp"
+},
+{
+  "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
+  "command": "/usr/bin/c++   -I/home/mingo/workspace/mingo_server_copy_sylar/.    -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp",
+  "file": "/home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp"
 },
 {
   "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
@@ -18,5 +23,10 @@
   "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
   "command": "/usr/bin/c++  -Dmingo_EXPORTS -I/home/mingo/workspace/mingo_server_copy_sylar/.  -fPIC   -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/mingo.dir/mingo/config.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp",
   "file": "/home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp"
+},
+{
+  "directory": "/home/mingo/workspace/mingo_server_copy_sylar/build",
+  "command": "/usr/bin/c++  -Dmingo_EXPORTS -I/home/mingo/workspace/mingo_server_copy_sylar/.  -fPIC   -O0 -g -ggdb -Wno-unused-variable -std=gnu++17 -o CMakeFiles/mingo.dir/mingo/thread.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/thread.cpp",
+  "file": "/home/mingo/workspace/mingo_server_copy_sylar/mingo/thread.cpp"
 }
 ]

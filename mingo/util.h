@@ -1,3 +1,6 @@
+#ifndef MINGO_UTIL_H
+#define MINGO_UTIL_H
+
 #include <pthread.h>
 #include <stdint.h>
 #include <sys/syscall.h>
@@ -13,4 +16,6 @@ uint32_t getThreadId();
 uint32_t getFiberId();
 
 }
+
+#endif
 

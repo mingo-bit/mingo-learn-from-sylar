@@ -1,0 +1,26 @@
+system:
+  vec: [10, 20]
+  list: [10, 20]
+  set: [10, 20, 30]
+  map:
+    k: 1
+    k1: 2
+    k2: 3
+  unordered_map:
+    k: 1
+    k1: 2
+    k2: 3
+  unordered_set: [10, 20, 30]
+
+class:
+    person:
+         name: mingo
+         age: 20
+         sex: true 
+    vec_person:
+        - name: mingo1
+          age: 20
+          sex: true
+        - name: mingo2
+          age: 19
+          sex: false

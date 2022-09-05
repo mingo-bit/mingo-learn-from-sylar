@@ -13,6 +13,24 @@
 #include <fstream>
 #include <cassert>
 #include <iostream>
+#include "singleton.h"
+#include "util.h"
+#include "thread.h"
+
+#define MAKE_LOG_EVENT(level, message) \
+    std::make_shared<mingo::LogEvent>(__FILE__, __LINE__, mingo::getThreadId(), mingo::getFiberId(), time(0), message, level)
+
+#define LOG_LEVEL(logger, level, message) \
+    logger->log(MAKE_LOG_EVENT(level, message));
+
+#define LOG_DEBUG(logger, message) LOG_LEVEL(logger, mingo::LogLevel::DEBUG, message)
+#define LOG_INFO(logger, message) LOG_LEVEL(logger, mingo::LogLevel::INFO, message)
+#define LOG_WARN(logger, message) LOG_LEVEL(logger, mingo::LogLevel::WARN, message)
+#define LOG_ERROR(logger, message) LOG_LEVEL(logger, mingo::LogLevel::ERROR, message)
+#define LOG_FATAL(logger, message) LOG_LEVEL(logger, mingo::LogLevel::FATAL, message)
+
+#define GET_GLOBAL_LOGGER() mingo::LoggerMgr::getInstance()->getGlobal()
+#define GET_LOGGER(name) mingo::LoggerMgr::getInstance()->getLogger(name)
 
 namespace mingo {
 
@@ -20,7 +38,7 @@ namespace mingo {
 class LogLevel {
 public:
     enum Level {
-        UNKOWN = 0,
+        UNKNOW = 0,
         DEBUG = 1,
         INFO = 2,
         WARN = 3,
@@ -28,6 +46,7 @@ public:
         FATAL = 5
     };
     static const char* levelToString(LogLevel::Level level);
+    static LogLevel::Level stringToLevel(const std::string &str);
 };
 
 //日志事件
@@ -55,7 +74,7 @@ public:
 
 private:
     std::string m_file;  //文件名
-    LogLevel::Level m_level;    //日志等级
+    LogLevel::Level m_level;    //事件等级
     uint32_t m_line = 0; //行号
     uint32_t m_elapse = 0; //从程序开始到现在的毫秒数
     uint32_t m_threadId = 0; //线程id
@@ -72,7 +91,10 @@ public:
     typedef std::shared_ptr<LogFormatter> ptr;  
     std::string format(std::shared_ptr<Logger> logger, LogEvent::ptr event);
     explicit LogFormatter(const std::string& pattern);
+    LogFormatter();
     void init(); 
+    bool isError() const { return m_error; } 
+    std::string getPattern() const { return m_pattern; }
 
     class FormatItem{
     public:
@@ -83,6 +105,7 @@ public:
 private:
     std::string m_pattern;
     std::vector<FormatItem::ptr> m_items;
+    bool m_error = false; // 格式是否出错
 };
 
 //日志输出
@@ -97,9 +120,13 @@ public:
     void setLevel(LogLevel::Level level) { m_level = level; }
     LogLevel::Level getLevel() const { return m_level; }
     LogFormatter::ptr getFormatter(); 
+    // 将日志输出目标的配置转化成YAML配置
+    virtual std::string toYamlString() = 0;
+
 protected:
     LogFormatter::ptr m_formatter; 
     LogLevel::Level m_level; 
+    mingo::Spinlock m_mutex;
 };
 
 //输出到控制台的日志输出器
@@ -108,6 +135,7 @@ class StdoutLogAppender : public LogAppender
 public:
     typedef std::shared_ptr<StdoutLogAppender> ptr;
     void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) override;
+    std::string toYamlString() override;
 
     explicit StdoutLogAppender(LogLevel::Level level = LogLevel::DEBUG);
    
@@ -122,6 +150,7 @@ public:
 
     explicit FileLogAppender(const std::string& file_name, LogLevel::Level level = LogLevel::DEBUG);
     bool reopen();
+    std::string toYamlString() override;
 private:
     std::string m_filename;
     std::ofstream m_filestream;
@@ -134,6 +163,7 @@ public:
 
     Logger(); 
     Logger(const std::string& name, LogLevel::Level level, const std::string& pattern);
+    Logger(const std::string& name);
 
     //日志输出
     void log(LogEvent::ptr event); 
@@ -147,10 +177,15 @@ public:
     void setLevel(LogLevel::Level level) { m_level = level; }
     LogLevel::Level getLevel() const { return m_level; }
 
+    void setFormatter(LogFormatter::ptr val);
+    void setFormatter(const std::string& val);
+    LogFormatter::ptr getFormatter();
     void addAppender(LogAppender::ptr appender);
     void delAppender(LogAppender::ptr appender);
+    void clearAppenders();
     
     std::string getName() const { return m_name; }
+    std::string toYamlString(); // 将日志的配置输出成为Yaml配置
     
 private:
     std::string m_name;    //日志名称;
@@ -158,6 +193,7 @@ private:
     std::string m_format_pattern;   //日志输出格式化器的默认pattern
     LogFormatter::ptr m_formatter;  //日志默认格式化器
     std::list<LogAppender::ptr> m_appenders;    //Appender列表
+    mingo::Spinlock m_mutex;
 };
 
 //日志管理器
@@ -169,15 +205,18 @@ public:
     // 传入日志器名称来获取日志器,如果不存在,返回全局日志器
     Logger::ptr getLogger(const std::string& name);
     //获取全局日志器
-    Logger::ptr getGlobal();
-
+    Logger::ptr getGlobal() { return m_global; }
+    std::string toYamlString();
     void init();
-    void ensureGlobalLoggerExists(); // 确保存在全局日志器
 
 private:
+    mingo::Spinlock m_mutex;
     std::map<std::string, Logger::ptr> m_loggers;
-    Logger::ptr m_root;
+    Logger::ptr m_global; // 全局日志器
 };
 
+typedef mingo::Singleton<LoggerManager> LoggerMgr;
+
 }
+
 #endif

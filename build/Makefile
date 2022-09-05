@@ -114,17 +114,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_config3
+# Target rules for targets named test_thread
 
 # Build rule for target.
-test_config3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_config3
-.PHONY : test_config3
+test_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
 
 # fast build rule for target.
-test_config3/fast:
-	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/build
-.PHONY : test_config3/fast
+test_thread/fast:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
+
+#=============================================================================
+# Target rules for targets named test_config_to_log
+
+# Build rule for target.
+test_config_to_log: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_config_to_log
+.PHONY : test_config_to_log
+
+# fast build rule for target.
+test_config_to_log/fast:
+	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/build
+.PHONY : test_config_to_log/fast
 
 #=============================================================================
 # Target rules for targets named mingo
@@ -193,6 +206,33 @@ mingo/log.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/log.cpp.s
 .PHONY : mingo/log.cpp.s
 
+mingo/thread.o: mingo/thread.cpp.o
+
+.PHONY : mingo/thread.o
+
+# target to build an object file
+mingo/thread.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/thread.cpp.o
+.PHONY : mingo/thread.cpp.o
+
+mingo/thread.i: mingo/thread.cpp.i
+
+.PHONY : mingo/thread.i
+
+# target to preprocess a source file
+mingo/thread.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/thread.cpp.i
+.PHONY : mingo/thread.cpp.i
+
+mingo/thread.s: mingo/thread.cpp.s
+
+.PHONY : mingo/thread.s
+
+# target to generate assembly for a file
+mingo/thread.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/thread.cpp.s
+.PHONY : mingo/thread.cpp.s
+
 mingo/util.o: mingo/util.cpp.o
 
 .PHONY : mingo/util.o
@@ -220,32 +260,59 @@ mingo/util.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/util.cpp.s
 .PHONY : mingo/util.cpp.s
 
-tests/test_config3.o: tests/test_config3.cpp.o
+tests/test_config_to_log.o: tests/test_config_to_log.cpp.o
 
-.PHONY : tests/test_config3.o
+.PHONY : tests/test_config_to_log.o
 
 # target to build an object file
-tests/test_config3.cpp.o:
-	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/tests/test_config3.cpp.o
-.PHONY : tests/test_config3.cpp.o
+tests/test_config_to_log.cpp.o:
+	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.o
+.PHONY : tests/test_config_to_log.cpp.o
 
-tests/test_config3.i: tests/test_config3.cpp.i
+tests/test_config_to_log.i: tests/test_config_to_log.cpp.i
 
-.PHONY : tests/test_config3.i
+.PHONY : tests/test_config_to_log.i
 
 # target to preprocess a source file
-tests/test_config3.cpp.i:
-	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/tests/test_config3.cpp.i
-.PHONY : tests/test_config3.cpp.i
+tests/test_config_to_log.cpp.i:
+	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.i
+.PHONY : tests/test_config_to_log.cpp.i
 
-tests/test_config3.s: tests/test_config3.cpp.s
+tests/test_config_to_log.s: tests/test_config_to_log.cpp.s
 
-.PHONY : tests/test_config3.s
+.PHONY : tests/test_config_to_log.s
 
 # target to generate assembly for a file
-tests/test_config3.cpp.s:
-	$(MAKE) -f CMakeFiles/test_config3.dir/build.make CMakeFiles/test_config3.dir/tests/test_config3.cpp.s
-.PHONY : tests/test_config3.cpp.s
+tests/test_config_to_log.cpp.s:
+	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.s
+.PHONY : tests/test_config_to_log.cpp.s
+
+tests/test_thread.o: tests/test_thread.cpp.o
+
+.PHONY : tests/test_thread.o
+
+# target to build an object file
+tests/test_thread.cpp.o:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.o
+.PHONY : tests/test_thread.cpp.o
+
+tests/test_thread.i: tests/test_thread.cpp.i
+
+.PHONY : tests/test_thread.i
+
+# target to preprocess a source file
+tests/test_thread.cpp.i:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.i
+.PHONY : tests/test_thread.cpp.i
+
+tests/test_thread.s: tests/test_thread.cpp.s
+
+.PHONY : tests/test_thread.s
+
+# target to generate assembly for a file
+tests/test_thread.cpp.s:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.s
+.PHONY : tests/test_thread.cpp.s
 
 # Help Target
 help:
@@ -255,7 +322,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test_config3"
+	@echo "... test_thread"
+	@echo "... test_config_to_log"
 	@echo "... mingo"
 	@echo "... mingo/config.o"
 	@echo "... mingo/config.i"
@@ -263,12 +331,18 @@ help:
 	@echo "... mingo/log.o"
 	@echo "... mingo/log.i"
 	@echo "... mingo/log.s"
+	@echo "... mingo/thread.o"
+	@echo "... mingo/thread.i"
+	@echo "... mingo/thread.s"
 	@echo "... mingo/util.o"
 	@echo "... mingo/util.i"
 	@echo "... mingo/util.s"
-	@echo "... tests/test_config3.o"
-	@echo "... tests/test_config3.i"
-	@echo "... tests/test_config3.s"
+	@echo "... tests/test_config_to_log.o"
+	@echo "... tests/test_config_to_log.i"
+	@echo "... tests/test_config_to_log.s"
+	@echo "... tests/test_thread.o"
+	@echo "... tests/test_thread.i"
+	@echo "... tests/test_thread.s"
 .PHONY : help
 
 

@@ -15,6 +15,7 @@
 #include <string>
 #include <yaml-cpp/yaml.h>
 #include <functional>
+#include "thread.h"
 
 namespace mingo {
 
@@ -34,7 +35,7 @@ public:
     const std::string& getName() const { return m_name;}
     const std::string& getDescription() const { return m_description;}
     // 将配置项的值转化为字符串
-    virtual std::string toString() const = 0;
+    virtual std::string toString() = 0;
     // 通过字符串来设置配置项的值
     virtual bool fromString(const std::string& val) = 0;
     // 获取配置项值的类型
@@ -257,21 +258,27 @@ public:
 
     T getValue() const
     {
+        RWLock::ReadLock lock(m_mutex);
         return m_value;
     }
 
     void setValue(const T value)
     {
-        if (m_value == value)
-            return;
-        for (auto &i: m_cbs)
-            i.second(m_value, value);
+        {
+            RWLock::ReadLock lock(m_mutex);
+            if (m_value == value)
+                return;
+            for (auto &i: m_cbs)
+                i.second(m_value, value);
+        }
+        RWLock::WriteLock lock(m_mutex);
         m_value = value;
     }
 
-    std::string toString() const override
+    std::string toString() override
     {
         try {
+            RWLock::ReadLock lock(m_mutex);
            return ToStr() (m_value);
         }
         catch (std::exception& e)
@@ -301,22 +308,34 @@ public:
     } 
 
     std::string getType() const override { return typeid(T).name(); }
-    void addListener(uint64_t key, on_change_cb cb) {
-        m_cbs[key] = cb; 
+    uint64_t addListener(on_change_cb cb) {
+        static uint64_t func_id = 0;
+        RWLock::WriteLock lock(m_mutex);
+        ++func_id;
+        m_cbs[func_id] = cb; 
+        return func_id;
     }
 
     void delListener(uint64_t key) {
+        RWLock::WriteLock lock(m_mutex);
         m_cbs.erase(key);
     }
 
     on_change_cb getListener(uint64_t key) {
+        RWLock::ReadLock lock(m_mutex);
         auto it = m_cbs.find(key);
         return it == m_cbs.end() ? nullptr : it->second;
+    }
+
+    void clearListeners() {
+        RWLock::WriteLock lock(m_mutex);
+        m_cbs.clear();
     }
 
 private:
     T m_value; // 配置项的值
     std::map<uint64_t, on_change_cb> m_cbs;
+    RWLock m_mutex; // 读写锁
 };
 
 class Config
@@ -328,8 +347,9 @@ public:
     template<class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string& name, const T& value, const std::string description = "")
     {
-        auto it = s_datas.find(name);
-        if (it != s_datas.end())
+        RWLock::WriteLock lock(get_mutex());
+        auto it = get_datas().find(name);
+        if (it != get_datas().end())
         {
             auto temp = std::dynamic_pointer_cast<ConfigVar<T> >(it->second);
             if (temp) {
@@ -350,7 +370,7 @@ public:
         }
 
         typename ConfigVar<T>::ptr v(new ConfigVar<T>(name, value, description));
-        s_datas[name] = v;
+        get_datas()[name] = v;
 
         return v;
     }
@@ -359,8 +379,9 @@ public:
     template <class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string& name)
     {
-        auto base_ptr = s_datas.find(name);
-        if (base_ptr == s_datas.end())
+        RWLock::ReadLock lock(get_mutex());
+        auto base_ptr = get_datas().find(name);
+        if (base_ptr == get_datas().end())
         {
             return nullptr;
         }
@@ -371,9 +392,18 @@ public:
     static ConfigVarBase::ptr LookupBase(const std::string& name);
 
     static void LoadFromYaml(const YAML::Node& root);
+    
+    static void Visit(std::function<void(ConfigVarBase::ptr)> cb);
 
 private:
-    static ConfigVarMap s_datas; // 配置项表
+    static ConfigVarMap &get_datas() {
+        static ConfigVarMap s_datas;
+        return s_datas;
+    }
+    static RWLock& get_mutex() {
+        static RWLock m_mutex;
+        return m_mutex;
+    }
 };
 }
 

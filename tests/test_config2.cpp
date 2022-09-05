@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
         logger->log(event);
     }
 
-    YAML::Node root = YAML::LoadFile("/home/mingo/workspace/mingo_server_copy_sylar/tests/configure/log.yml");
+    YAML::Node root = YAML::LoadFile("/home/mingo/workspace/mingo_server_copy_sylar/tests/configure/test.yml");
     mingo::Config::LoadFromYaml(root);
 
     v = init_value_config3->getValue();

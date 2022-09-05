@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/config.cpp.o"
   "/home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/log.cpp.o"
+  "/home/mingo/workspace/mingo_server_copy_sylar/mingo/thread.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/thread.cpp.o"
   "/home/mingo/workspace/mingo_server_copy_sylar/mingo/util.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/mingo/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

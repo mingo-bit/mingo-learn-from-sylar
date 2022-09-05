@@ -4,9 +4,22 @@
 CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/config.cpp
 CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/config.h
 CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/log.h
+CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/singleton.h
+CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/thread.h
+CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/util.h
 
+CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/config.h
 CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/log.cpp
 CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/log.h
+CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/singleton.h
+CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/thread.h
+CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/util.h
+
+CMakeFiles/mingo.dir/mingo/thread.cpp.o: ../mingo/log.h
+CMakeFiles/mingo.dir/mingo/thread.cpp.o: ../mingo/singleton.h
+CMakeFiles/mingo.dir/mingo/thread.cpp.o: ../mingo/thread.cpp
+CMakeFiles/mingo.dir/mingo/thread.cpp.o: ../mingo/thread.h
+CMakeFiles/mingo.dir/mingo/thread.cpp.o: ../mingo/util.h
 
 CMakeFiles/mingo.dir/mingo/util.cpp.o: ../mingo/util.cpp
 CMakeFiles/mingo.dir/mingo/util.cpp.o: ../mingo/util.h

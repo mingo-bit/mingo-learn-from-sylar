@@ -3,11 +3,9 @@
 
 namespace mingo {
 
-Config::ConfigVarMap Config::s_datas;    
-
 ConfigVarBase::ptr Config::LookupBase(const std::string& name) {
-    auto it = s_datas.find(name);
-    return it == s_datas.end() ? nullptr : it->second;
+    auto it = get_datas().find(name);
+    return it == get_datas().end() ? nullptr : it->second;
 }
 
 static void ListAllMember(const std::string& prefix, 
@@ -24,6 +22,14 @@ static void ListAllMember(const std::string& prefix,
         {
             ListAllMember(prefix.empty() ? it->first.Scalar() : prefix + "." + it->first.Scalar(), it->second, output);
         }
+    }
+}
+
+void Config::Visit(std::function<void(ConfigVarBase::ptr)> cb) {
+    RWLock::ReadLock lock(get_mutex());
+    ConfigVarMap& m = get_datas();
+    for (auto it = m.begin(); it != m.end(); ++it) {
+        cb(it->second);
     }
 }
 

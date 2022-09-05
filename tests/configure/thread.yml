@@ -1,0 +1,8 @@
+logs:
+    - name: global
+      level: debug 
+      formatter: "[%d] [%p] [%c] <%f: %l> [T:%t F:%F]%T%m%n"
+      appenders:
+          - type: FileLogAppender
+            level: info
+            file: /home/mingo/workspace/mingo_server_copy_sylar/tests/test_thread.txt

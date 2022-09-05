@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
     event->setContent("before vp: " + vec_person_value_config->toString());
     logger->log(event);
 
-    YAML::Node root = YAML::LoadFile("/home/mingo/workspace/mingo_server_copy_sylar/tests/configure/log.yml");
+    YAML::Node root = YAML::LoadFile("/home/mingo/workspace/mingo_server_copy_sylar/tests/configure/test.yml");
     mingo::Config::LoadFromYaml(root);
 
     event->setContent("after: " + int_vec_value_config->toString());

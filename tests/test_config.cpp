@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 
     mingo::LogFormatter::ptr fmtr = mingo::LogFormatter::ptr(new mingo::LogFormatter("[%d]  [T:%t F:%F]  [%c]  [%p]  <%f: %l>  %m%n"));
-    mingo::LogAppender::ptr apdr = mingo::LogAppender::ptr(new mingo::FileLogAppender("../test1.txt"));
+    mingo::LogAppender::ptr apdr = mingo::LogAppender::ptr(new mingo::FileLogAppender("./test1.txt"));
     apdr->setFormatter(fmtr);
     apdr->setLevel(mingo::LogLevel::DEBUG);
     logger->addAppender(apdr);

@@ -14,6 +14,7 @@ set(LIB_SRC
      mingo/log.cpp
      mingo/util.cpp
      mingo/config.cpp
+     mingo/thread.cpp
      )
 
 
@@ -35,9 +36,17 @@ add_library(mingo SHARED ${LIB_SRC})
 #add_dependencies(test_config2 mingo)
 #target_link_libraries(test_config2 mingo yaml-cpp)
 
-add_executable(test_config3 tests/test_config3.cpp)
-add_dependencies(test_config3 mingo)
-target_link_libraries(test_config3 mingo yaml-cpp)
+#add_executable(test_config3 tests/test_config3.cpp)
+#add_dependencies(test_config3 mingo)
+#target_link_libraries(test_config3 mingo yaml-cpp)
+
+add_executable(test_config_to_log tests/test_config_to_log.cpp)
+add_dependencies(test_config_to_log mingo)
+target_link_libraries(test_config_to_log mingo yaml-cpp pthread)
+
+add_executable(test_thread tests/test_thread.cpp)
+add_dependencies(test_thread mingo)
+target_link_libraries(test_thread mingo yaml-cpp pthread)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
