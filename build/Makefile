@@ -51,10 +51,10 @@ RM = /apps/mingo/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server_copy_sylar
+CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server_copy_sylar/build
+CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,9 +83,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles /home/mingo/workspace/mingo_server/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,17 +114,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_thread
+# Target rules for targets named test_daemon
 
 # Build rule for target.
-test_thread: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_thread
-.PHONY : test_thread
+test_daemon: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_daemon
+.PHONY : test_daemon
 
 # fast build rule for target.
-test_thread/fast:
-	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
-.PHONY : test_thread/fast
+test_daemon/fast:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+.PHONY : test_daemon/fast
+
+#=============================================================================
+# Target rules for targets named test_http_connection
+
+# Build rule for target.
+test_http_connection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_connection
+.PHONY : test_http_connection
+
+# fast build rule for target.
+test_http_connection/fast:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
+.PHONY : test_http_connection/fast
+
+#=============================================================================
+# Target rules for targets named http_server
+
+# Build rule for target.
+http_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_server
+.PHONY : http_server
+
+# fast build rule for target.
+http_server/fast:
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/build
+.PHONY : http_server/fast
+
+#=============================================================================
+# Target rules for targets named test_uri
+
+# Build rule for target.
+test_uri: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_uri
+.PHONY : test_uri
+
+# fast build rule for target.
+test_uri/fast:
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/build
+.PHONY : test_uri/fast
+
+#=============================================================================
+# Target rules for targets named echo_server
+
+# Build rule for target.
+echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
+
+# fast build rule for target.
+echo_server/fast:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
 
 #=============================================================================
 # Target rules for targets named test_config_to_log
@@ -151,6 +203,296 @@ mingo: cmake_check_build_system
 mingo/fast:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/build
 .PHONY : mingo/fast
+
+#=============================================================================
+# Target rules for targets named test_thread
+
+# Build rule for target.
+test_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
+
+#=============================================================================
+# Target rules for targets named test_env
+
+# Build rule for target.
+test_env: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_env
+.PHONY : test_env
+
+# fast build rule for target.
+test_env/fast:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+.PHONY : test_env/fast
+
+#=============================================================================
+# Target rules for targets named test_util
+
+# Build rule for target.
+test_util: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_util
+.PHONY : test_util
+
+# fast build rule for target.
+test_util/fast:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
+.PHONY : test_util/fast
+
+#=============================================================================
+# Target rules for targets named test_fiber
+
+# Build rule for target.
+test_fiber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_fiber
+.PHONY : test_fiber
+
+# fast build rule for target.
+test_fiber/fast:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+.PHONY : test_fiber/fast
+
+#=============================================================================
+# Target rules for targets named test_http_server
+
+# Build rule for target.
+test_http_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_server
+.PHONY : test_http_server
+
+# fast build rule for target.
+test_http_server/fast:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+.PHONY : test_http_server/fast
+
+#=============================================================================
+# Target rules for targets named test_address
+
+# Build rule for target.
+test_address: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_address
+.PHONY : test_address
+
+# fast build rule for target.
+test_address/fast:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+.PHONY : test_address/fast
+
+#=============================================================================
+# Target rules for targets named test_scheduler
+
+# Build rule for target.
+test_scheduler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_scheduler
+.PHONY : test_scheduler
+
+# fast build rule for target.
+test_scheduler/fast:
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/build
+.PHONY : test_scheduler/fast
+
+#=============================================================================
+# Target rules for targets named test_iomanager
+
+# Build rule for target.
+test_iomanager: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_iomanager
+.PHONY : test_iomanager
+
+# fast build rule for target.
+test_iomanager/fast:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
+.PHONY : test_iomanager/fast
+
+#=============================================================================
+# Target rules for targets named test_tcp_server
+
+# Build rule for target.
+test_tcp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tcp_server
+.PHONY : test_tcp_server
+
+# fast build rule for target.
+test_tcp_server/fast:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/build
+.PHONY : test_tcp_server/fast
+
+#=============================================================================
+# Target rules for targets named test_http_parser
+
+# Build rule for target.
+test_http_parser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_parser
+.PHONY : test_http_parser
+
+# fast build rule for target.
+test_http_parser/fast:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+.PHONY : test_http_parser/fast
+
+#=============================================================================
+# Target rules for targets named test_hook
+
+# Build rule for target.
+test_hook: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_hook
+.PHONY : test_hook
+
+# fast build rule for target.
+test_hook/fast:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+.PHONY : test_hook/fast
+
+#=============================================================================
+# Target rules for targets named test_socket
+
+# Build rule for target.
+test_socket: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_socket
+.PHONY : test_socket
+
+# fast build rule for target.
+test_socket/fast:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+.PHONY : test_socket/fast
+
+#=============================================================================
+# Target rules for targets named test_bytearray
+
+# Build rule for target.
+test_bytearray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_bytearray
+.PHONY : test_bytearray
+
+# fast build rule for target.
+test_bytearray/fast:
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
+.PHONY : test_bytearray/fast
+
+#=============================================================================
+# Target rules for targets named test_http
+
+# Build rule for target.
+test_http: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http
+.PHONY : test_http
+
+# fast build rule for target.
+test_http/fast:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
+.PHONY : test_http/fast
+
+examples/echo_server.o: examples/echo_server.cpp.o
+
+.PHONY : examples/echo_server.o
+
+# target to build an object file
+examples/echo_server.cpp.o:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cpp.o
+.PHONY : examples/echo_server.cpp.o
+
+examples/echo_server.i: examples/echo_server.cpp.i
+
+.PHONY : examples/echo_server.i
+
+# target to preprocess a source file
+examples/echo_server.cpp.i:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cpp.i
+.PHONY : examples/echo_server.cpp.i
+
+examples/echo_server.s: examples/echo_server.cpp.s
+
+.PHONY : examples/echo_server.s
+
+# target to generate assembly for a file
+examples/echo_server.cpp.s:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cpp.s
+.PHONY : examples/echo_server.cpp.s
+
+examples/http_server.o: examples/http_server.cpp.o
+
+.PHONY : examples/http_server.o
+
+# target to build an object file
+examples/http_server.cpp.o:
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/examples/http_server.cpp.o
+.PHONY : examples/http_server.cpp.o
+
+examples/http_server.i: examples/http_server.cpp.i
+
+.PHONY : examples/http_server.i
+
+# target to preprocess a source file
+examples/http_server.cpp.i:
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/examples/http_server.cpp.i
+.PHONY : examples/http_server.cpp.i
+
+examples/http_server.s: examples/http_server.cpp.s
+
+.PHONY : examples/http_server.s
+
+# target to generate assembly for a file
+examples/http_server.cpp.s:
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/examples/http_server.cpp.s
+.PHONY : examples/http_server.cpp.s
+
+mingo/address.o: mingo/address.cpp.o
+
+.PHONY : mingo/address.o
+
+# target to build an object file
+mingo/address.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/address.cpp.o
+.PHONY : mingo/address.cpp.o
+
+mingo/address.i: mingo/address.cpp.i
+
+.PHONY : mingo/address.i
+
+# target to preprocess a source file
+mingo/address.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/address.cpp.i
+.PHONY : mingo/address.cpp.i
+
+mingo/address.s: mingo/address.cpp.s
+
+.PHONY : mingo/address.s
+
+# target to generate assembly for a file
+mingo/address.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/address.cpp.s
+.PHONY : mingo/address.cpp.s
+
+mingo/bytearray.o: mingo/bytearray.cpp.o
+
+.PHONY : mingo/bytearray.o
+
+# target to build an object file
+mingo/bytearray.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/bytearray.cpp.o
+.PHONY : mingo/bytearray.cpp.o
+
+mingo/bytearray.i: mingo/bytearray.cpp.i
+
+.PHONY : mingo/bytearray.i
+
+# target to preprocess a source file
+mingo/bytearray.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/bytearray.cpp.i
+.PHONY : mingo/bytearray.cpp.i
+
+mingo/bytearray.s: mingo/bytearray.cpp.s
+
+.PHONY : mingo/bytearray.s
+
+# target to generate assembly for a file
+mingo/bytearray.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/bytearray.cpp.s
+.PHONY : mingo/bytearray.cpp.s
 
 mingo/config.o: mingo/config.cpp.o
 
@@ -179,6 +521,384 @@ mingo/config.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/config.cpp.s
 .PHONY : mingo/config.cpp.s
 
+mingo/daemon.o: mingo/daemon.cpp.o
+
+.PHONY : mingo/daemon.o
+
+# target to build an object file
+mingo/daemon.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/daemon.cpp.o
+.PHONY : mingo/daemon.cpp.o
+
+mingo/daemon.i: mingo/daemon.cpp.i
+
+.PHONY : mingo/daemon.i
+
+# target to preprocess a source file
+mingo/daemon.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/daemon.cpp.i
+.PHONY : mingo/daemon.cpp.i
+
+mingo/daemon.s: mingo/daemon.cpp.s
+
+.PHONY : mingo/daemon.s
+
+# target to generate assembly for a file
+mingo/daemon.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/daemon.cpp.s
+.PHONY : mingo/daemon.cpp.s
+
+mingo/env.o: mingo/env.cpp.o
+
+.PHONY : mingo/env.o
+
+# target to build an object file
+mingo/env.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/env.cpp.o
+.PHONY : mingo/env.cpp.o
+
+mingo/env.i: mingo/env.cpp.i
+
+.PHONY : mingo/env.i
+
+# target to preprocess a source file
+mingo/env.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/env.cpp.i
+.PHONY : mingo/env.cpp.i
+
+mingo/env.s: mingo/env.cpp.s
+
+.PHONY : mingo/env.s
+
+# target to generate assembly for a file
+mingo/env.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/env.cpp.s
+.PHONY : mingo/env.cpp.s
+
+mingo/fd_manager.o: mingo/fd_manager.cpp.o
+
+.PHONY : mingo/fd_manager.o
+
+# target to build an object file
+mingo/fd_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o
+.PHONY : mingo/fd_manager.cpp.o
+
+mingo/fd_manager.i: mingo/fd_manager.cpp.i
+
+.PHONY : mingo/fd_manager.i
+
+# target to preprocess a source file
+mingo/fd_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/fd_manager.cpp.i
+.PHONY : mingo/fd_manager.cpp.i
+
+mingo/fd_manager.s: mingo/fd_manager.cpp.s
+
+.PHONY : mingo/fd_manager.s
+
+# target to generate assembly for a file
+mingo/fd_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/fd_manager.cpp.s
+.PHONY : mingo/fd_manager.cpp.s
+
+mingo/fiber.o: mingo/fiber.cpp.o
+
+.PHONY : mingo/fiber.o
+
+# target to build an object file
+mingo/fiber.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/fiber.cpp.o
+.PHONY : mingo/fiber.cpp.o
+
+mingo/fiber.i: mingo/fiber.cpp.i
+
+.PHONY : mingo/fiber.i
+
+# target to preprocess a source file
+mingo/fiber.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/fiber.cpp.i
+.PHONY : mingo/fiber.cpp.i
+
+mingo/fiber.s: mingo/fiber.cpp.s
+
+.PHONY : mingo/fiber.s
+
+# target to generate assembly for a file
+mingo/fiber.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/fiber.cpp.s
+.PHONY : mingo/fiber.cpp.s
+
+mingo/hook.o: mingo/hook.cpp.o
+
+.PHONY : mingo/hook.o
+
+# target to build an object file
+mingo/hook.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/hook.cpp.o
+.PHONY : mingo/hook.cpp.o
+
+mingo/hook.i: mingo/hook.cpp.i
+
+.PHONY : mingo/hook.i
+
+# target to preprocess a source file
+mingo/hook.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/hook.cpp.i
+.PHONY : mingo/hook.cpp.i
+
+mingo/hook.s: mingo/hook.cpp.s
+
+.PHONY : mingo/hook.s
+
+# target to generate assembly for a file
+mingo/hook.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/hook.cpp.s
+.PHONY : mingo/hook.cpp.s
+
+mingo/http/http.o: mingo/http/http.cpp.o
+
+.PHONY : mingo/http/http.o
+
+# target to build an object file
+mingo/http/http.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http.cpp.o
+.PHONY : mingo/http/http.cpp.o
+
+mingo/http/http.i: mingo/http/http.cpp.i
+
+.PHONY : mingo/http/http.i
+
+# target to preprocess a source file
+mingo/http/http.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http.cpp.i
+.PHONY : mingo/http/http.cpp.i
+
+mingo/http/http.s: mingo/http/http.cpp.s
+
+.PHONY : mingo/http/http.s
+
+# target to generate assembly for a file
+mingo/http/http.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http.cpp.s
+.PHONY : mingo/http/http.cpp.s
+
+mingo/http/http11_parser.rl.o: mingo/http/http11_parser.rl.cpp.o
+
+.PHONY : mingo/http/http11_parser.rl.o
+
+# target to build an object file
+mingo/http/http11_parser.rl.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o
+.PHONY : mingo/http/http11_parser.rl.cpp.o
+
+mingo/http/http11_parser.rl.i: mingo/http/http11_parser.rl.cpp.i
+
+.PHONY : mingo/http/http11_parser.rl.i
+
+# target to preprocess a source file
+mingo/http/http11_parser.rl.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.i
+.PHONY : mingo/http/http11_parser.rl.cpp.i
+
+mingo/http/http11_parser.rl.s: mingo/http/http11_parser.rl.cpp.s
+
+.PHONY : mingo/http/http11_parser.rl.s
+
+# target to generate assembly for a file
+mingo/http/http11_parser.rl.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.s
+.PHONY : mingo/http/http11_parser.rl.cpp.s
+
+mingo/http/http_connection.o: mingo/http/http_connection.cpp.o
+
+.PHONY : mingo/http/http_connection.o
+
+# target to build an object file
+mingo/http/http_connection.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o
+.PHONY : mingo/http/http_connection.cpp.o
+
+mingo/http/http_connection.i: mingo/http/http_connection.cpp.i
+
+.PHONY : mingo/http/http_connection.i
+
+# target to preprocess a source file
+mingo/http/http_connection.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.i
+.PHONY : mingo/http/http_connection.cpp.i
+
+mingo/http/http_connection.s: mingo/http/http_connection.cpp.s
+
+.PHONY : mingo/http/http_connection.s
+
+# target to generate assembly for a file
+mingo/http/http_connection.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.s
+.PHONY : mingo/http/http_connection.cpp.s
+
+mingo/http/http_parser.o: mingo/http/http_parser.cpp.o
+
+.PHONY : mingo/http/http_parser.o
+
+# target to build an object file
+mingo/http/http_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o
+.PHONY : mingo/http/http_parser.cpp.o
+
+mingo/http/http_parser.i: mingo/http/http_parser.cpp.i
+
+.PHONY : mingo/http/http_parser.i
+
+# target to preprocess a source file
+mingo/http/http_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.i
+.PHONY : mingo/http/http_parser.cpp.i
+
+mingo/http/http_parser.s: mingo/http/http_parser.cpp.s
+
+.PHONY : mingo/http/http_parser.s
+
+# target to generate assembly for a file
+mingo/http/http_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.s
+.PHONY : mingo/http/http_parser.cpp.s
+
+mingo/http/http_server.o: mingo/http/http_server.cpp.o
+
+.PHONY : mingo/http/http_server.o
+
+# target to build an object file
+mingo/http/http_server.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o
+.PHONY : mingo/http/http_server.cpp.o
+
+mingo/http/http_server.i: mingo/http/http_server.cpp.i
+
+.PHONY : mingo/http/http_server.i
+
+# target to preprocess a source file
+mingo/http/http_server.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_server.cpp.i
+.PHONY : mingo/http/http_server.cpp.i
+
+mingo/http/http_server.s: mingo/http/http_server.cpp.s
+
+.PHONY : mingo/http/http_server.s
+
+# target to generate assembly for a file
+mingo/http/http_server.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_server.cpp.s
+.PHONY : mingo/http/http_server.cpp.s
+
+mingo/http/http_session.o: mingo/http/http_session.cpp.o
+
+.PHONY : mingo/http/http_session.o
+
+# target to build an object file
+mingo/http/http_session.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o
+.PHONY : mingo/http/http_session.cpp.o
+
+mingo/http/http_session.i: mingo/http/http_session.cpp.i
+
+.PHONY : mingo/http/http_session.i
+
+# target to preprocess a source file
+mingo/http/http_session.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_session.cpp.i
+.PHONY : mingo/http/http_session.cpp.i
+
+mingo/http/http_session.s: mingo/http/http_session.cpp.s
+
+.PHONY : mingo/http/http_session.s
+
+# target to generate assembly for a file
+mingo/http/http_session.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/http_session.cpp.s
+.PHONY : mingo/http/http_session.cpp.s
+
+mingo/http/httpclient_parser.rl.o: mingo/http/httpclient_parser.rl.cpp.o
+
+.PHONY : mingo/http/httpclient_parser.rl.o
+
+# target to build an object file
+mingo/http/httpclient_parser.rl.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o
+.PHONY : mingo/http/httpclient_parser.rl.cpp.o
+
+mingo/http/httpclient_parser.rl.i: mingo/http/httpclient_parser.rl.cpp.i
+
+.PHONY : mingo/http/httpclient_parser.rl.i
+
+# target to preprocess a source file
+mingo/http/httpclient_parser.rl.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.i
+.PHONY : mingo/http/httpclient_parser.rl.cpp.i
+
+mingo/http/httpclient_parser.rl.s: mingo/http/httpclient_parser.rl.cpp.s
+
+.PHONY : mingo/http/httpclient_parser.rl.s
+
+# target to generate assembly for a file
+mingo/http/httpclient_parser.rl.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.s
+.PHONY : mingo/http/httpclient_parser.rl.cpp.s
+
+mingo/http/servlet.o: mingo/http/servlet.cpp.o
+
+.PHONY : mingo/http/servlet.o
+
+# target to build an object file
+mingo/http/servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o
+.PHONY : mingo/http/servlet.cpp.o
+
+mingo/http/servlet.i: mingo/http/servlet.cpp.i
+
+.PHONY : mingo/http/servlet.i
+
+# target to preprocess a source file
+mingo/http/servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/servlet.cpp.i
+.PHONY : mingo/http/servlet.cpp.i
+
+mingo/http/servlet.s: mingo/http/servlet.cpp.s
+
+.PHONY : mingo/http/servlet.s
+
+# target to generate assembly for a file
+mingo/http/servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/http/servlet.cpp.s
+.PHONY : mingo/http/servlet.cpp.s
+
+mingo/iomanager.o: mingo/iomanager.cpp.o
+
+.PHONY : mingo/iomanager.o
+
+# target to build an object file
+mingo/iomanager.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/iomanager.cpp.o
+.PHONY : mingo/iomanager.cpp.o
+
+mingo/iomanager.i: mingo/iomanager.cpp.i
+
+.PHONY : mingo/iomanager.i
+
+# target to preprocess a source file
+mingo/iomanager.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/iomanager.cpp.i
+.PHONY : mingo/iomanager.cpp.i
+
+mingo/iomanager.s: mingo/iomanager.cpp.s
+
+.PHONY : mingo/iomanager.s
+
+# target to generate assembly for a file
+mingo/iomanager.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/iomanager.cpp.s
+.PHONY : mingo/iomanager.cpp.s
+
 mingo/log.o: mingo/log.cpp.o
 
 .PHONY : mingo/log.o
@@ -205,6 +925,141 @@ mingo/log.s: mingo/log.cpp.s
 mingo/log.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/log.cpp.s
 .PHONY : mingo/log.cpp.s
+
+mingo/scheduler.o: mingo/scheduler.cpp.o
+
+.PHONY : mingo/scheduler.o
+
+# target to build an object file
+mingo/scheduler.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/scheduler.cpp.o
+.PHONY : mingo/scheduler.cpp.o
+
+mingo/scheduler.i: mingo/scheduler.cpp.i
+
+.PHONY : mingo/scheduler.i
+
+# target to preprocess a source file
+mingo/scheduler.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/scheduler.cpp.i
+.PHONY : mingo/scheduler.cpp.i
+
+mingo/scheduler.s: mingo/scheduler.cpp.s
+
+.PHONY : mingo/scheduler.s
+
+# target to generate assembly for a file
+mingo/scheduler.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/scheduler.cpp.s
+.PHONY : mingo/scheduler.cpp.s
+
+mingo/socket.o: mingo/socket.cpp.o
+
+.PHONY : mingo/socket.o
+
+# target to build an object file
+mingo/socket.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/socket.cpp.o
+.PHONY : mingo/socket.cpp.o
+
+mingo/socket.i: mingo/socket.cpp.i
+
+.PHONY : mingo/socket.i
+
+# target to preprocess a source file
+mingo/socket.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/socket.cpp.i
+.PHONY : mingo/socket.cpp.i
+
+mingo/socket.s: mingo/socket.cpp.s
+
+.PHONY : mingo/socket.s
+
+# target to generate assembly for a file
+mingo/socket.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/socket.cpp.s
+.PHONY : mingo/socket.cpp.s
+
+mingo/stream.o: mingo/stream.cpp.o
+
+.PHONY : mingo/stream.o
+
+# target to build an object file
+mingo/stream.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/stream.cpp.o
+.PHONY : mingo/stream.cpp.o
+
+mingo/stream.i: mingo/stream.cpp.i
+
+.PHONY : mingo/stream.i
+
+# target to preprocess a source file
+mingo/stream.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/stream.cpp.i
+.PHONY : mingo/stream.cpp.i
+
+mingo/stream.s: mingo/stream.cpp.s
+
+.PHONY : mingo/stream.s
+
+# target to generate assembly for a file
+mingo/stream.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/stream.cpp.s
+.PHONY : mingo/stream.cpp.s
+
+mingo/streams/socket_stream.o: mingo/streams/socket_stream.cpp.o
+
+.PHONY : mingo/streams/socket_stream.o
+
+# target to build an object file
+mingo/streams/socket_stream.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o
+.PHONY : mingo/streams/socket_stream.cpp.o
+
+mingo/streams/socket_stream.i: mingo/streams/socket_stream.cpp.i
+
+.PHONY : mingo/streams/socket_stream.i
+
+# target to preprocess a source file
+mingo/streams/socket_stream.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.i
+.PHONY : mingo/streams/socket_stream.cpp.i
+
+mingo/streams/socket_stream.s: mingo/streams/socket_stream.cpp.s
+
+.PHONY : mingo/streams/socket_stream.s
+
+# target to generate assembly for a file
+mingo/streams/socket_stream.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.s
+.PHONY : mingo/streams/socket_stream.cpp.s
+
+mingo/tcp_server.o: mingo/tcp_server.cpp.o
+
+.PHONY : mingo/tcp_server.o
+
+# target to build an object file
+mingo/tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o
+.PHONY : mingo/tcp_server.cpp.o
+
+mingo/tcp_server.i: mingo/tcp_server.cpp.i
+
+.PHONY : mingo/tcp_server.i
+
+# target to preprocess a source file
+mingo/tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/tcp_server.cpp.i
+.PHONY : mingo/tcp_server.cpp.i
+
+mingo/tcp_server.s: mingo/tcp_server.cpp.s
+
+.PHONY : mingo/tcp_server.s
+
+# target to generate assembly for a file
+mingo/tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/tcp_server.cpp.s
+.PHONY : mingo/tcp_server.cpp.s
 
 mingo/thread.o: mingo/thread.cpp.o
 
@@ -233,6 +1088,60 @@ mingo/thread.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/thread.cpp.s
 .PHONY : mingo/thread.cpp.s
 
+mingo/timer.o: mingo/timer.cpp.o
+
+.PHONY : mingo/timer.o
+
+# target to build an object file
+mingo/timer.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/timer.cpp.o
+.PHONY : mingo/timer.cpp.o
+
+mingo/timer.i: mingo/timer.cpp.i
+
+.PHONY : mingo/timer.i
+
+# target to preprocess a source file
+mingo/timer.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/timer.cpp.i
+.PHONY : mingo/timer.cpp.i
+
+mingo/timer.s: mingo/timer.cpp.s
+
+.PHONY : mingo/timer.s
+
+# target to generate assembly for a file
+mingo/timer.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/timer.cpp.s
+.PHONY : mingo/timer.cpp.s
+
+mingo/uri.o: mingo/uri.cpp.o
+
+.PHONY : mingo/uri.o
+
+# target to build an object file
+mingo/uri.cpp.o:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/uri.cpp.o
+.PHONY : mingo/uri.cpp.o
+
+mingo/uri.i: mingo/uri.cpp.i
+
+.PHONY : mingo/uri.i
+
+# target to preprocess a source file
+mingo/uri.cpp.i:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/uri.cpp.i
+.PHONY : mingo/uri.cpp.i
+
+mingo/uri.s: mingo/uri.cpp.s
+
+.PHONY : mingo/uri.s
+
+# target to generate assembly for a file
+mingo/uri.cpp.s:
+	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/uri.cpp.s
+.PHONY : mingo/uri.cpp.s
+
 mingo/util.o: mingo/util.cpp.o
 
 .PHONY : mingo/util.o
@@ -259,6 +1168,60 @@ mingo/util.s: mingo/util.cpp.s
 mingo/util.cpp.s:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/mingo/util.cpp.s
 .PHONY : mingo/util.cpp.s
+
+tests/test_address.o: tests/test_address.cpp.o
+
+.PHONY : tests/test_address.o
+
+# target to build an object file
+tests/test_address.cpp.o:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cpp.o
+.PHONY : tests/test_address.cpp.o
+
+tests/test_address.i: tests/test_address.cpp.i
+
+.PHONY : tests/test_address.i
+
+# target to preprocess a source file
+tests/test_address.cpp.i:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cpp.i
+.PHONY : tests/test_address.cpp.i
+
+tests/test_address.s: tests/test_address.cpp.s
+
+.PHONY : tests/test_address.s
+
+# target to generate assembly for a file
+tests/test_address.cpp.s:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cpp.s
+.PHONY : tests/test_address.cpp.s
+
+tests/test_bytearray.o: tests/test_bytearray.cpp.o
+
+.PHONY : tests/test_bytearray.o
+
+# target to build an object file
+tests/test_bytearray.cpp.o:
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/tests/test_bytearray.cpp.o
+.PHONY : tests/test_bytearray.cpp.o
+
+tests/test_bytearray.i: tests/test_bytearray.cpp.i
+
+.PHONY : tests/test_bytearray.i
+
+# target to preprocess a source file
+tests/test_bytearray.cpp.i:
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/tests/test_bytearray.cpp.i
+.PHONY : tests/test_bytearray.cpp.i
+
+tests/test_bytearray.s: tests/test_bytearray.cpp.s
+
+.PHONY : tests/test_bytearray.s
+
+# target to generate assembly for a file
+tests/test_bytearray.cpp.s:
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/tests/test_bytearray.cpp.s
+.PHONY : tests/test_bytearray.cpp.s
 
 tests/test_config_to_log.o: tests/test_config_to_log.cpp.o
 
@@ -287,6 +1250,330 @@ tests/test_config_to_log.cpp.s:
 	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.s
 .PHONY : tests/test_config_to_log.cpp.s
 
+tests/test_daemon.o: tests/test_daemon.cpp.o
+
+.PHONY : tests/test_daemon.o
+
+# target to build an object file
+tests/test_daemon.cpp.o:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cpp.o
+.PHONY : tests/test_daemon.cpp.o
+
+tests/test_daemon.i: tests/test_daemon.cpp.i
+
+.PHONY : tests/test_daemon.i
+
+# target to preprocess a source file
+tests/test_daemon.cpp.i:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cpp.i
+.PHONY : tests/test_daemon.cpp.i
+
+tests/test_daemon.s: tests/test_daemon.cpp.s
+
+.PHONY : tests/test_daemon.s
+
+# target to generate assembly for a file
+tests/test_daemon.cpp.s:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cpp.s
+.PHONY : tests/test_daemon.cpp.s
+
+tests/test_env.o: tests/test_env.cpp.o
+
+.PHONY : tests/test_env.o
+
+# target to build an object file
+tests/test_env.cpp.o:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cpp.o
+.PHONY : tests/test_env.cpp.o
+
+tests/test_env.i: tests/test_env.cpp.i
+
+.PHONY : tests/test_env.i
+
+# target to preprocess a source file
+tests/test_env.cpp.i:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cpp.i
+.PHONY : tests/test_env.cpp.i
+
+tests/test_env.s: tests/test_env.cpp.s
+
+.PHONY : tests/test_env.s
+
+# target to generate assembly for a file
+tests/test_env.cpp.s:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cpp.s
+.PHONY : tests/test_env.cpp.s
+
+tests/test_fiber.o: tests/test_fiber.cpp.o
+
+.PHONY : tests/test_fiber.o
+
+# target to build an object file
+tests/test_fiber.cpp.o:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o
+.PHONY : tests/test_fiber.cpp.o
+
+tests/test_fiber.i: tests/test_fiber.cpp.i
+
+.PHONY : tests/test_fiber.i
+
+# target to preprocess a source file
+tests/test_fiber.cpp.i:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.i
+.PHONY : tests/test_fiber.cpp.i
+
+tests/test_fiber.s: tests/test_fiber.cpp.s
+
+.PHONY : tests/test_fiber.s
+
+# target to generate assembly for a file
+tests/test_fiber.cpp.s:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.s
+.PHONY : tests/test_fiber.cpp.s
+
+tests/test_hook.o: tests/test_hook.cpp.o
+
+.PHONY : tests/test_hook.o
+
+# target to build an object file
+tests/test_hook.cpp.o:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.o
+.PHONY : tests/test_hook.cpp.o
+
+tests/test_hook.i: tests/test_hook.cpp.i
+
+.PHONY : tests/test_hook.i
+
+# target to preprocess a source file
+tests/test_hook.cpp.i:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.i
+.PHONY : tests/test_hook.cpp.i
+
+tests/test_hook.s: tests/test_hook.cpp.s
+
+.PHONY : tests/test_hook.s
+
+# target to generate assembly for a file
+tests/test_hook.cpp.s:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.s
+.PHONY : tests/test_hook.cpp.s
+
+tests/test_http.o: tests/test_http.cpp.o
+
+.PHONY : tests/test_http.o
+
+# target to build an object file
+tests/test_http.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cpp.o
+.PHONY : tests/test_http.cpp.o
+
+tests/test_http.i: tests/test_http.cpp.i
+
+.PHONY : tests/test_http.i
+
+# target to preprocess a source file
+tests/test_http.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cpp.i
+.PHONY : tests/test_http.cpp.i
+
+tests/test_http.s: tests/test_http.cpp.s
+
+.PHONY : tests/test_http.s
+
+# target to generate assembly for a file
+tests/test_http.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cpp.s
+.PHONY : tests/test_http.cpp.s
+
+tests/test_http_connection.o: tests/test_http_connection.cpp.o
+
+.PHONY : tests/test_http_connection.o
+
+# target to build an object file
+tests/test_http_connection.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o
+.PHONY : tests/test_http_connection.cpp.o
+
+tests/test_http_connection.i: tests/test_http_connection.cpp.i
+
+.PHONY : tests/test_http_connection.i
+
+# target to preprocess a source file
+tests/test_http_connection.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.i
+.PHONY : tests/test_http_connection.cpp.i
+
+tests/test_http_connection.s: tests/test_http_connection.cpp.s
+
+.PHONY : tests/test_http_connection.s
+
+# target to generate assembly for a file
+tests/test_http_connection.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.s
+.PHONY : tests/test_http_connection.cpp.s
+
+tests/test_http_parser.o: tests/test_http_parser.cpp.o
+
+.PHONY : tests/test_http_parser.o
+
+# target to build an object file
+tests/test_http_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.o
+.PHONY : tests/test_http_parser.cpp.o
+
+tests/test_http_parser.i: tests/test_http_parser.cpp.i
+
+.PHONY : tests/test_http_parser.i
+
+# target to preprocess a source file
+tests/test_http_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.i
+.PHONY : tests/test_http_parser.cpp.i
+
+tests/test_http_parser.s: tests/test_http_parser.cpp.s
+
+.PHONY : tests/test_http_parser.s
+
+# target to generate assembly for a file
+tests/test_http_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.s
+.PHONY : tests/test_http_parser.cpp.s
+
+tests/test_http_server.o: tests/test_http_server.cpp.o
+
+.PHONY : tests/test_http_server.o
+
+# target to build an object file
+tests/test_http_server.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cpp.o
+.PHONY : tests/test_http_server.cpp.o
+
+tests/test_http_server.i: tests/test_http_server.cpp.i
+
+.PHONY : tests/test_http_server.i
+
+# target to preprocess a source file
+tests/test_http_server.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cpp.i
+.PHONY : tests/test_http_server.cpp.i
+
+tests/test_http_server.s: tests/test_http_server.cpp.s
+
+.PHONY : tests/test_http_server.s
+
+# target to generate assembly for a file
+tests/test_http_server.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cpp.s
+.PHONY : tests/test_http_server.cpp.s
+
+tests/test_iomanager.o: tests/test_iomanager.cpp.o
+
+.PHONY : tests/test_iomanager.o
+
+# target to build an object file
+tests/test_iomanager.cpp.o:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o
+.PHONY : tests/test_iomanager.cpp.o
+
+tests/test_iomanager.i: tests/test_iomanager.cpp.i
+
+.PHONY : tests/test_iomanager.i
+
+# target to preprocess a source file
+tests/test_iomanager.cpp.i:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.i
+.PHONY : tests/test_iomanager.cpp.i
+
+tests/test_iomanager.s: tests/test_iomanager.cpp.s
+
+.PHONY : tests/test_iomanager.s
+
+# target to generate assembly for a file
+tests/test_iomanager.cpp.s:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.s
+.PHONY : tests/test_iomanager.cpp.s
+
+tests/test_scheduler.o: tests/test_scheduler.cpp.o
+
+.PHONY : tests/test_scheduler.o
+
+# target to build an object file
+tests/test_scheduler.cpp.o:
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o
+.PHONY : tests/test_scheduler.cpp.o
+
+tests/test_scheduler.i: tests/test_scheduler.cpp.i
+
+.PHONY : tests/test_scheduler.i
+
+# target to preprocess a source file
+tests/test_scheduler.cpp.i:
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.i
+.PHONY : tests/test_scheduler.cpp.i
+
+tests/test_scheduler.s: tests/test_scheduler.cpp.s
+
+.PHONY : tests/test_scheduler.s
+
+# target to generate assembly for a file
+tests/test_scheduler.cpp.s:
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.s
+.PHONY : tests/test_scheduler.cpp.s
+
+tests/test_socket.o: tests/test_socket.cpp.o
+
+.PHONY : tests/test_socket.o
+
+# target to build an object file
+tests/test_socket.cpp.o:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.o
+.PHONY : tests/test_socket.cpp.o
+
+tests/test_socket.i: tests/test_socket.cpp.i
+
+.PHONY : tests/test_socket.i
+
+# target to preprocess a source file
+tests/test_socket.cpp.i:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.i
+.PHONY : tests/test_socket.cpp.i
+
+tests/test_socket.s: tests/test_socket.cpp.s
+
+.PHONY : tests/test_socket.s
+
+# target to generate assembly for a file
+tests/test_socket.cpp.s:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.s
+.PHONY : tests/test_socket.cpp.s
+
+tests/test_tcp_server.o: tests/test_tcp_server.cpp.o
+
+.PHONY : tests/test_tcp_server.o
+
+# target to build an object file
+tests/test_tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cpp.o
+.PHONY : tests/test_tcp_server.cpp.o
+
+tests/test_tcp_server.i: tests/test_tcp_server.cpp.i
+
+.PHONY : tests/test_tcp_server.i
+
+# target to preprocess a source file
+tests/test_tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cpp.i
+.PHONY : tests/test_tcp_server.cpp.i
+
+tests/test_tcp_server.s: tests/test_tcp_server.cpp.s
+
+.PHONY : tests/test_tcp_server.s
+
+# target to generate assembly for a file
+tests/test_tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cpp.s
+.PHONY : tests/test_tcp_server.cpp.s
+
 tests/test_thread.o: tests/test_thread.cpp.o
 
 .PHONY : tests/test_thread.o
@@ -314,35 +1601,230 @@ tests/test_thread.cpp.s:
 	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.s
 .PHONY : tests/test_thread.cpp.s
 
+tests/test_uri.o: tests/test_uri.cpp.o
+
+.PHONY : tests/test_uri.o
+
+# target to build an object file
+tests/test_uri.cpp.o:
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cpp.o
+.PHONY : tests/test_uri.cpp.o
+
+tests/test_uri.i: tests/test_uri.cpp.i
+
+.PHONY : tests/test_uri.i
+
+# target to preprocess a source file
+tests/test_uri.cpp.i:
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cpp.i
+.PHONY : tests/test_uri.cpp.i
+
+tests/test_uri.s: tests/test_uri.cpp.s
+
+.PHONY : tests/test_uri.s
+
+# target to generate assembly for a file
+tests/test_uri.cpp.s:
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cpp.s
+.PHONY : tests/test_uri.cpp.s
+
+tests/test_util.o: tests/test_util.cpp.o
+
+.PHONY : tests/test_util.o
+
+# target to build an object file
+tests/test_util.cpp.o:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cpp.o
+.PHONY : tests/test_util.cpp.o
+
+tests/test_util.i: tests/test_util.cpp.i
+
+.PHONY : tests/test_util.i
+
+# target to preprocess a source file
+tests/test_util.cpp.i:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cpp.i
+.PHONY : tests/test_util.cpp.i
+
+tests/test_util.s: tests/test_util.cpp.s
+
+.PHONY : tests/test_util.s
+
+# target to generate assembly for a file
+tests/test_util.cpp.s:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cpp.s
+.PHONY : tests/test_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_daemon"
+	@echo "... test_http_connection"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test_thread"
+	@echo "... http_server"
+	@echo "... test_uri"
+	@echo "... echo_server"
 	@echo "... test_config_to_log"
 	@echo "... mingo"
+	@echo "... test_thread"
+	@echo "... test_env"
+	@echo "... test_util"
+	@echo "... test_fiber"
+	@echo "... test_http_server"
+	@echo "... test_address"
+	@echo "... test_scheduler"
+	@echo "... test_iomanager"
+	@echo "... test_tcp_server"
+	@echo "... test_http_parser"
+	@echo "... test_hook"
+	@echo "... test_socket"
+	@echo "... test_bytearray"
+	@echo "... test_http"
+	@echo "... examples/echo_server.o"
+	@echo "... examples/echo_server.i"
+	@echo "... examples/echo_server.s"
+	@echo "... examples/http_server.o"
+	@echo "... examples/http_server.i"
+	@echo "... examples/http_server.s"
+	@echo "... mingo/address.o"
+	@echo "... mingo/address.i"
+	@echo "... mingo/address.s"
+	@echo "... mingo/bytearray.o"
+	@echo "... mingo/bytearray.i"
+	@echo "... mingo/bytearray.s"
 	@echo "... mingo/config.o"
 	@echo "... mingo/config.i"
 	@echo "... mingo/config.s"
+	@echo "... mingo/daemon.o"
+	@echo "... mingo/daemon.i"
+	@echo "... mingo/daemon.s"
+	@echo "... mingo/env.o"
+	@echo "... mingo/env.i"
+	@echo "... mingo/env.s"
+	@echo "... mingo/fd_manager.o"
+	@echo "... mingo/fd_manager.i"
+	@echo "... mingo/fd_manager.s"
+	@echo "... mingo/fiber.o"
+	@echo "... mingo/fiber.i"
+	@echo "... mingo/fiber.s"
+	@echo "... mingo/hook.o"
+	@echo "... mingo/hook.i"
+	@echo "... mingo/hook.s"
+	@echo "... mingo/http/http.o"
+	@echo "... mingo/http/http.i"
+	@echo "... mingo/http/http.s"
+	@echo "... mingo/http/http11_parser.rl.o"
+	@echo "... mingo/http/http11_parser.rl.i"
+	@echo "... mingo/http/http11_parser.rl.s"
+	@echo "... mingo/http/http_connection.o"
+	@echo "... mingo/http/http_connection.i"
+	@echo "... mingo/http/http_connection.s"
+	@echo "... mingo/http/http_parser.o"
+	@echo "... mingo/http/http_parser.i"
+	@echo "... mingo/http/http_parser.s"
+	@echo "... mingo/http/http_server.o"
+	@echo "... mingo/http/http_server.i"
+	@echo "... mingo/http/http_server.s"
+	@echo "... mingo/http/http_session.o"
+	@echo "... mingo/http/http_session.i"
+	@echo "... mingo/http/http_session.s"
+	@echo "... mingo/http/httpclient_parser.rl.o"
+	@echo "... mingo/http/httpclient_parser.rl.i"
+	@echo "... mingo/http/httpclient_parser.rl.s"
+	@echo "... mingo/http/servlet.o"
+	@echo "... mingo/http/servlet.i"
+	@echo "... mingo/http/servlet.s"
+	@echo "... mingo/iomanager.o"
+	@echo "... mingo/iomanager.i"
+	@echo "... mingo/iomanager.s"
 	@echo "... mingo/log.o"
 	@echo "... mingo/log.i"
 	@echo "... mingo/log.s"
+	@echo "... mingo/scheduler.o"
+	@echo "... mingo/scheduler.i"
+	@echo "... mingo/scheduler.s"
+	@echo "... mingo/socket.o"
+	@echo "... mingo/socket.i"
+	@echo "... mingo/socket.s"
+	@echo "... mingo/stream.o"
+	@echo "... mingo/stream.i"
+	@echo "... mingo/stream.s"
+	@echo "... mingo/streams/socket_stream.o"
+	@echo "... mingo/streams/socket_stream.i"
+	@echo "... mingo/streams/socket_stream.s"
+	@echo "... mingo/tcp_server.o"
+	@echo "... mingo/tcp_server.i"
+	@echo "... mingo/tcp_server.s"
 	@echo "... mingo/thread.o"
 	@echo "... mingo/thread.i"
 	@echo "... mingo/thread.s"
+	@echo "... mingo/timer.o"
+	@echo "... mingo/timer.i"
+	@echo "... mingo/timer.s"
+	@echo "... mingo/uri.o"
+	@echo "... mingo/uri.i"
+	@echo "... mingo/uri.s"
 	@echo "... mingo/util.o"
 	@echo "... mingo/util.i"
 	@echo "... mingo/util.s"
+	@echo "... tests/test_address.o"
+	@echo "... tests/test_address.i"
+	@echo "... tests/test_address.s"
+	@echo "... tests/test_bytearray.o"
+	@echo "... tests/test_bytearray.i"
+	@echo "... tests/test_bytearray.s"
 	@echo "... tests/test_config_to_log.o"
 	@echo "... tests/test_config_to_log.i"
 	@echo "... tests/test_config_to_log.s"
+	@echo "... tests/test_daemon.o"
+	@echo "... tests/test_daemon.i"
+	@echo "... tests/test_daemon.s"
+	@echo "... tests/test_env.o"
+	@echo "... tests/test_env.i"
+	@echo "... tests/test_env.s"
+	@echo "... tests/test_fiber.o"
+	@echo "... tests/test_fiber.i"
+	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_hook.o"
+	@echo "... tests/test_hook.i"
+	@echo "... tests/test_hook.s"
+	@echo "... tests/test_http.o"
+	@echo "... tests/test_http.i"
+	@echo "... tests/test_http.s"
+	@echo "... tests/test_http_connection.o"
+	@echo "... tests/test_http_connection.i"
+	@echo "... tests/test_http_connection.s"
+	@echo "... tests/test_http_parser.o"
+	@echo "... tests/test_http_parser.i"
+	@echo "... tests/test_http_parser.s"
+	@echo "... tests/test_http_server.o"
+	@echo "... tests/test_http_server.i"
+	@echo "... tests/test_http_server.s"
+	@echo "... tests/test_iomanager.o"
+	@echo "... tests/test_iomanager.i"
+	@echo "... tests/test_iomanager.s"
+	@echo "... tests/test_scheduler.o"
+	@echo "... tests/test_scheduler.i"
+	@echo "... tests/test_scheduler.s"
+	@echo "... tests/test_socket.o"
+	@echo "... tests/test_socket.i"
+	@echo "... tests/test_socket.s"
+	@echo "... tests/test_tcp_server.o"
+	@echo "... tests/test_tcp_server.i"
+	@echo "... tests/test_tcp_server.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"
+	@echo "... tests/test_uri.o"
+	@echo "... tests/test_uri.i"
+	@echo "... tests/test_uri.s"
+	@echo "... tests/test_util.o"
+	@echo "... tests/test_util.i"
+	@echo "... tests/test_util.s"
 .PHONY : help
 
 

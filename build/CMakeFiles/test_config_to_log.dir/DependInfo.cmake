@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp" "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.o"
+  "/home/mingo/workspace/mingo_server/tests/test_config_to_log.cpp" "/home/mingo/workspace/mingo_server/build/CMakeFiles/test_config_to_log.dir/tests/test_config_to_log.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/DependInfo.cmake"
+  "/home/mingo/workspace/mingo_server/build/CMakeFiles/mingo.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -133,6 +133,15 @@ public:
         os << '\t';
     }
 };
+
+class ThreadNameFormatItem : public LogFormatter::FormatItem {
+public:
+    ThreadNameFormatItem(const std::string& str = "") {}
+    void format(std::ostream& os, std::shared_ptr<Logger> logger, LogEvent::ptr event) override {
+        os << event->getThreadName();
+    }
+};
+
 /**
  * %p 输出日志等级
  * %f 输出文件名
@@ -145,6 +154,7 @@ public:
  * %% 输出百分号
  * %T 输出制表符
  * %c 输出日志名称
+ * %N 输出线程名称
  * */
 thread_local static std::map<char, LogFormatter::FormatItem::ptr> format_item_map{
 #define FN(CH, ITEM_NAME)                 \
@@ -162,6 +172,7 @@ thread_local static std::map<char, LogFormatter::FormatItem::ptr> format_item_ma
     FN('%', PercentSignFormatItem),
     FN('T', TabFormatItem),
     FN('c', NameFormatItem),
+    FN('N', ThreadNameFormatItem),
 #undef FN
 };
 
@@ -207,7 +218,7 @@ LogLevel::Level LogLevel::stringToLevel(const std::string &str) {
     return LogLevel::UNKNOW;
 }
 
-Logger::Logger() : m_name("default"), m_level(LogLevel::DEBUG), m_format_pattern("[%d] [%p] [%c] <%f: %l> [T:%t F:%F]%T%m%n")
+Logger::Logger() : m_name("default"), m_level(LogLevel::DEBUG), m_format_pattern("[%d] [%p] [%c] <%f: %l> [%N] [T:%t F:%F]%T%m%n")
 {
     m_formatter.reset(new LogFormatter(m_format_pattern));
 }
@@ -218,7 +229,9 @@ Logger::Logger(const std::string& name, LogLevel::Level level, const std::string
     m_formatter.reset(new LogFormatter(pattern));
 }
 
-Logger::Logger(const std::string& name) : m_name(name), m_level(mingo::LogLevel::INFO) {
+Logger::Logger(const std::string& name) : m_name(name), m_level(mingo::LogLevel::DEBUG), 
+        m_format_pattern("[%d] [%p] [%c] <%f: %l> [%N] [T:%t F:%F]%T%m%n"){
+        m_formatter.reset(new LogFormatter(m_format_pattern));
 }
 
 void Logger::log(LogEvent::ptr event)
@@ -481,7 +494,7 @@ std::string LogFormatter::format(std::shared_ptr<Logger> logger, LogEvent::ptr e
 
 LoggerManager::LoggerManager()
 {
-    m_global.reset(new Logger("global", LogLevel::DEBUG, "[%d] [%p] [%c] <%f: %l> [T:%t F:%F]%T%m%n"));
+    m_global.reset(new Logger("global", LogLevel::DEBUG, "[%d] [%p] [%c] <%f: %l> [%N] [T:%t F:%F]%T%m%n"));
     m_global->addAppender(LogAppender::ptr(new StdoutLogAppender));
     m_loggers[m_global->getName()] = m_global;
     init();
@@ -501,8 +514,8 @@ Logger::ptr LoggerManager::getLogger(const std::string& name)
         // 日志器存在，则返回日志器 
         return iter->second;
     }
-    // 日志器不存在，则创建新日志器，并将指针指向全局日志器
-    Logger::ptr new_logger(new Logger(name, LogLevel::UNKNOW, "[%d] [%p] [%c] <%f: %l> [T:%t F:%F]%T%m%n"));
+    // 日志器不存在，则创建新日志器器, 并创建默认的日志输出器StdoutLogApender
+    Logger::ptr new_logger(new Logger(name));
     new_logger->addAppender(LogAppender::ptr(new StdoutLogAppender));
     m_loggers[name] = new_logger;
     return new_logger;
@@ -657,7 +670,7 @@ struct LogIniter {
                 } else {
                     if(!(i == *it)) {
                         // 修改的logger
-                        logger == GET_LOGGER(i.name);
+                        logger = GET_LOGGER(i.name);
                     } else {
                         continue;
                     }

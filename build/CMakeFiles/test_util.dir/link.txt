@@ -1,0 +1,1 @@
+/apps/mingo/bin/g++   -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated -Wno-deprecated-declarations  -rdynamic CMakeFiles/test_util.dir/tests/test_util.cpp.o  -o ../bin/test_util  -L/usr/local/lib -Wl,-rpath,/usr/local/lib:/home/mingo/workspace/mingo_server/lib ../lib/libmingo.so -lyaml-cpp -lpthread -ldl 

@@ -1,6 +1,6 @@
-The system is: Linux - 5.11.0-49-generic - x86_64
+The system is: Linux - 3.10.0-1160.el7.x86_64 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: /apps/mingo/bin/gcc 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/3.14.5/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/mingo/workspace/mingo_server/build/CMakeFiles/3.14.5/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: /apps/mingo/bin/g++ 
 Build flags: 
 Id flags:  
 
@@ -23,240 +23,218 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/3.14.5/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/mingo/workspace/mingo_server/build/CMakeFiles/3.14.5/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_afbd9/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_afbd9.dir/build.make CMakeFiles/cmTC_afbd9.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_afbd9.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_afbd9.dir/testCCompiler.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_afbd9
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afbd9.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_afbd9.dir/testCCompiler.c.o  -o cmTC_afbd9 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_8f08f/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_8f08f.dir/build.make CMakeFiles/cmTC_8f08f.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8f08f.dir/testCCompiler.c.o
+/apps/mingo/bin/gcc    -o CMakeFiles/cmTC_8f08f.dir/testCCompiler.c.o   -c /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_8f08f
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f08f.dir/link.txt --verbose=1
+/apps/mingo/bin/gcc      -rdynamic CMakeFiles/cmTC_8f08f.dir/testCCompiler.c.o  -o cmTC_8f08f 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_a8f93/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_a8f93.dir/build.make CMakeFiles/cmTC_a8f93.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake cmTC_07fdd/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_07fdd.dir/build.make CMakeFiles/cmTC_07fdd.dir/build
+gmake[1]: Entering directory `/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o
+/apps/mingo/bin/gcc   -v -o CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c
 Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex
+COLLECT_GCC=/apps/mingo/bin/gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cciQbXMq.s
-GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/cc1 -quiet -v /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccgKko7n.s
+GNU C17 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-linux-gnu/10/include
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include
  /usr/local/include
- /usr/include/x86_64-linux-gnu
+ /apps/mingo/include
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed
  /usr/include
 End of search list.
-GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
+GNU C17 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 58794417508a053c2d813aa212cbee7e
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o /tmp/cciQbXMq.s
-GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_a8f93
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8f93.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o  -o cmTC_a8f93 
+Compiler executable checksum: fec001eb14333567fd2f18e88dc231ec
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o /tmp/ccgKko7n.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_07fdd
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07fdd.dir/link.txt --verbose=1
+/apps/mingo/bin/gcc     -v -rdynamic CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o  -o cmTC_07fdd 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex
+COLLECT_GCC=/apps/mingo/bin/gcc
+COLLECT_LTO_WRAPPER=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a8f93' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccleDiRF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a8f93 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a8f93' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (GCC) 
+COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07fdd' '-mtune=generic' '-march=x86-64'
+ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/collect2 -plugin /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/liblto_plugin.so -plugin-opt=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrxEYpp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_07fdd /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtbegin.o -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../.. CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07fdd' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-linux-gnu/10/include]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include]
     add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
+    add: [/apps/mingo/include]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/10/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/10/include]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include] ==> [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/apps/mingo/include] ==> [/apps/mingo/include]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed] ==> [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/10/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include;/usr/local/include;/apps/mingo/include;/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_a8f93/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_a8f93.dir/build.make CMakeFiles/cmTC_a8f93.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_07fdd/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_07fdd.dir/build.make CMakeFiles/cmTC_07fdd.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/apps/mingo/bin/gcc   -v -o CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex]
+  ignore line: [COLLECT_GCC=/apps/mingo/bin/gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cciQbXMq.s]
-  ignore line: [GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/cc1 -quiet -v /apps/mingo/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccgKko7n.s]
+  ignore line: [GNU C17 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/include]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /apps/mingo/include]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP]
+  ignore line: [GNU C17 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 58794417508a053c2d813aa212cbee7e]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o /tmp/cciQbXMq.s]
-  ignore line: [GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_a8f93]
-  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8f93.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o  -o cmTC_a8f93 ]
+  ignore line: [Compiler executable checksum: fec001eb14333567fd2f18e88dc231ec]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o /tmp/ccgKko7n.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_07fdd]
+  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07fdd.dir/link.txt --verbose=1]
+  ignore line: [/apps/mingo/bin/gcc     -v -rdynamic CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o  -o cmTC_07fdd ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex]
+  ignore line: [COLLECT_GCC=/apps/mingo/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a8f93' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccleDiRF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a8f93 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07fdd' '-mtune=generic' '-march=x86-64']
+  link line: [ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/collect2 -plugin /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/liblto_plugin.so -plugin-opt=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrxEYpp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_07fdd /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtbegin.o -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../.. CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccleDiRF.res] ==> ignore
+    arg [/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccrxEYpp.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a8f93] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [CMakeFiles/cmTC_a8f93.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_07fdd] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtbegin.o] ==> ignore
+    arg [-L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0] ==> dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0]
+    arg [-L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64] ==> dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../..] ==> dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../..]
+    arg [CMakeFiles/cmTC_07fdd.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
+    arg [--no-as-needed] ==> ignore
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10] ==> [/usr/lib/gcc/x86_64-linux-gnu/10]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> [/usr/lib]
+    arg [--no-as-needed] ==> ignore
+    arg [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0] ==> [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0]
+  collapse library dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64] ==> [/apps/mingo/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../..] ==> [/apps/mingo/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0;/apps/mingo/lib64;/lib64;/usr/lib64;/apps/mingo/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_6fbc4/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_6fbc4.dir/build.make CMakeFiles/cmTC_6fbc4.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6fbc4.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_6fbc4.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6fbc4
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fbc4.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6fbc4.dir/feature_tests.c.o  -o cmTC_6fbc4 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_96618/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_96618.dir/build.make CMakeFiles/cmTC_96618.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_96618.dir/feature_tests.c.o
+/apps/mingo/bin/gcc   -std=c11 -o CMakeFiles/cmTC_96618.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_96618
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96618.dir/link.txt --verbose=1
+/apps/mingo/bin/gcc      -rdynamic CMakeFiles/cmTC_96618.dir/feature_tests.c.o  -o cmTC_96618 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -266,17 +244,17 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_4cb99/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_4cb99.dir/build.make CMakeFiles/cmTC_4cb99.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4cb99.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_4cb99.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4cb99
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cb99.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4cb99.dir/feature_tests.c.o  -o cmTC_4cb99 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_4cc67/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_4cc67.dir/build.make CMakeFiles/cmTC_4cc67.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4cc67.dir/feature_tests.c.o
+/apps/mingo/bin/gcc   -std=c99 -o CMakeFiles/cmTC_4cc67.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4cc67
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cc67.dir/link.txt --verbose=1
+/apps/mingo/bin/gcc      -rdynamic CMakeFiles/cmTC_4cc67.dir/feature_tests.c.o  -o cmTC_4cc67 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -286,17 +264,17 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_2e9a2/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_2e9a2.dir/build.make CMakeFiles/cmTC_2e9a2.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2e9a2.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_2e9a2.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2e9a2
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e9a2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2e9a2.dir/feature_tests.c.o  -o cmTC_2e9a2 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_56b9d/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_56b9d.dir/build.make CMakeFiles/cmTC_56b9d.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_56b9d.dir/feature_tests.c.o
+/apps/mingo/bin/gcc   -std=c90 -o CMakeFiles/cmTC_56b9d.dir/feature_tests.c.o   -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_56b9d
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56b9d.dir/link.txt --verbose=1
+/apps/mingo/bin/gcc      -rdynamic CMakeFiles/cmTC_56b9d.dir/feature_tests.c.o  -o cmTC_56b9d 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -304,211 +282,192 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_3bbae/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_3bbae.dir/build.make CMakeFiles/cmTC_3bbae.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3bbae.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_3bbae.dir/testCXXCompiler.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_3bbae
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bbae.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_3bbae.dir/testCXXCompiler.cxx.o  -o cmTC_3bbae 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_18219/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_18219.dir/build.make CMakeFiles/cmTC_18219.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_18219.dir/testCXXCompiler.cxx.o
+/apps/mingo/bin/g++     -o CMakeFiles/cmTC_18219.dir/testCXXCompiler.cxx.o -c /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_18219
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18219.dir/link.txt --verbose=1
+/apps/mingo/bin/g++       -rdynamic CMakeFiles/cmTC_18219.dir/testCXXCompiler.cxx.o  -o cmTC_18219 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_4bb26/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_4bb26.dir/build.make CMakeFiles/cmTC_4bb26.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_6a958/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_6a958.dir/build.make CMakeFiles/cmTC_6a958.dir/build
+gmake[1]: Entering directory `/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o
+/apps/mingo/bin/g++    -v -o CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex
+COLLECT_GCC=/apps/mingo/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrD7Sr5.s
-GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/cc1plus -quiet -v -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccSoQ0x0.s
+GNU C++14 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/10"
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/include/c++/10
- /usr/include/x86_64-linux-gnu/c++/10
- /usr/include/c++/10/backward
- /usr/lib/gcc/x86_64-linux-gnu/10/include
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/x86_64-pc-linux-gnu
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/backward
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include
  /usr/local/include
- /usr/include/x86_64-linux-gnu
+ /apps/mingo/include
+ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed
  /usr/include
 End of search list.
-GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)
-	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
+GNU C++14 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 118e824ee50d24f402f1f2e0e1ebfb12
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrD7Sr5.s
-GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_4bb26
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb26.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4bb26 
+Compiler executable checksum: 2ebdab49b7f5d7baa7a014b12efb03fd
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccSoQ0x0.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_6a958
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a958.dir/link.txt --verbose=1
+/apps/mingo/bin/g++      -v -rdynamic CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6a958 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex
+COLLECT_GCC=/apps/mingo/bin/g++
+COLLECT_LTO_WRAPPER=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4bb26' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cct2pDKg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4bb26 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4bb26' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (GCC) 
+COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a958' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/collect2 -plugin /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/liblto_plugin.so -plugin-opt=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZwZRC6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6a958 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtbegin.o -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../.. CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a958' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/include/c++/10]
-    add: [/usr/include/x86_64-linux-gnu/c++/10]
-    add: [/usr/include/c++/10/backward]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/10/include]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/x86_64-pc-linux-gnu]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/backward]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include]
     add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
+    add: [/apps/mingo/include]
+    add: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/include/c++/10] ==> [/usr/include/c++/10]
-  collapse include dir [/usr/include/x86_64-linux-gnu/c++/10] ==> [/usr/include/x86_64-linux-gnu/c++/10]
-  collapse include dir [/usr/include/c++/10/backward] ==> [/usr/include/c++/10/backward]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/10/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/10/include]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0] ==> [/apps/mingo/include/c++/10.3.0]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/x86_64-pc-linux-gnu] ==> [/apps/mingo/include/c++/10.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/backward] ==> [/apps/mingo/include/c++/10.3.0/backward]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include] ==> [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/apps/mingo/include] ==> [/apps/mingo/include]
+  collapse include dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed] ==> [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/10;/usr/include/x86_64-linux-gnu/c++/10;/usr/include/c++/10/backward;/usr/lib/gcc/x86_64-linux-gnu/10/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/apps/mingo/include/c++/10.3.0;/apps/mingo/include/c++/10.3.0/x86_64-pc-linux-gnu;/apps/mingo/include/c++/10.3.0/backward;/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include;/usr/local/include;/apps/mingo/include;/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_4bb26/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_4bb26.dir/build.make CMakeFiles/cmTC_4bb26.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_6a958/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_6a958.dir/build.make CMakeFiles/cmTC_6a958.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/apps/mingo/bin/g++    -v -o CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o -c /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex]
+  ignore line: [COLLECT_GCC=/apps/mingo/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrD7Sr5.s]
-  ignore line: [GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/cc1plus -quiet -v -D_GNU_SOURCE /apps/mingo/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccSoQ0x0.s]
+  ignore line: [GNU C++14 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/10"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/include/c++/10]
-  ignore line: [ /usr/include/x86_64-linux-gnu/c++/10]
-  ignore line: [ /usr/include/c++/10/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/include]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../include/c++/10.3.0/backward]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /apps/mingo/include]
+  ignore line: [ /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP]
+  ignore line: [GNU C++14 (GCC) version 10.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 118e824ee50d24f402f1f2e0e1ebfb12]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrD7Sr5.s]
-  ignore line: [GNU assembler version 2.36.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.36.1]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_4bb26]
-  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb26.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4bb26 ]
+  ignore line: [Compiler executable checksum: 2ebdab49b7f5d7baa7a014b12efb03fd]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccSoQ0x0.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_6a958]
+  ignore line: [/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a958.dir/link.txt --verbose=1]
+  ignore line: [/apps/mingo/bin/g++      -v -rdynamic CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6a958 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-10-gDeRY6/gcc-10-10.3.0/debian/tmp-gcn/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-mutex]
+  ignore line: [COLLECT_GCC=/apps/mingo/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo : (reconfigured) ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --prefix=/apps/mingo]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4bb26' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cct2pDKg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4bb26 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a958' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/collect2 -plugin /apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/liblto_plugin.so -plugin-opt=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZwZRC6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6a958 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtbegin.o -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../.. CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cct2pDKg.res] ==> ignore
+    arg [/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/apps/mingo/libexec/gcc/x86_64-pc-linux-gnu/10.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccZwZRC6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4bb26] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [CMakeFiles/cmTC_4bb26.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_6a958] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtbegin.o] ==> ignore
+    arg [-L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0] ==> dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0]
+    arg [-L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64] ==> dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../..] ==> dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../..]
+    arg [CMakeFiles/cmTC_6a958.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -516,35 +475,32 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10] ==> [/usr/lib/gcc/x86_64-linux-gnu/10]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> [/usr/lib]
+    arg [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0] ==> [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0]
+  collapse library dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../../../lib64] ==> [/apps/mingo/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0/../../..] ==> [/apps/mingo/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/apps/mingo/lib/gcc/x86_64-pc-linux-gnu/10.3.0;/apps/mingo/lib64;/lib64;/usr/lib64;/apps/mingo/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_39a88/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_39a88.dir/build.make CMakeFiles/cmTC_39a88.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_39a88.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_39a88.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_39a88
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39a88.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_39a88.dir/feature_tests.cxx.o  -o cmTC_39a88 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_cf4d2/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_cf4d2.dir/build.make CMakeFiles/cmTC_cf4d2.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_cf4d2.dir/feature_tests.cxx.o
+/apps/mingo/bin/g++    -std=c++2a -o CMakeFiles/cmTC_cf4d2.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cf4d2
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf4d2.dir/link.txt --verbose=1
+/apps/mingo/bin/g++       -rdynamic CMakeFiles/cmTC_cf4d2.dir/feature_tests.cxx.o  -o cmTC_cf4d2 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -607,17 +563,17 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_9858b/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_9858b.dir/build.make CMakeFiles/cmTC_9858b.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9858b.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_9858b.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_9858b
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9858b.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_9858b.dir/feature_tests.cxx.o  -o cmTC_9858b 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_4fab5/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_4fab5.dir/build.make CMakeFiles/cmTC_4fab5.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_4fab5.dir/feature_tests.cxx.o
+/apps/mingo/bin/g++    -std=c++17 -o CMakeFiles/cmTC_4fab5.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4fab5
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fab5.dir/link.txt --verbose=1
+/apps/mingo/bin/g++       -rdynamic CMakeFiles/cmTC_4fab5.dir/feature_tests.cxx.o  -o cmTC_4fab5 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -680,17 +636,17 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_6da77/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_6da77.dir/build.make CMakeFiles/cmTC_6da77.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6da77.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_6da77.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6da77
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da77.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_6da77.dir/feature_tests.cxx.o  -o cmTC_6da77 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_97bc0/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_97bc0.dir/build.make CMakeFiles/cmTC_97bc0.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_97bc0.dir/feature_tests.cxx.o
+/apps/mingo/bin/g++    -std=c++14 -o CMakeFiles/cmTC_97bc0.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_97bc0
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97bc0.dir/link.txt --verbose=1
+/apps/mingo/bin/g++       -rdynamic CMakeFiles/cmTC_97bc0.dir/feature_tests.cxx.o  -o cmTC_97bc0 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -753,17 +709,17 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_78333/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_78333.dir/build.make CMakeFiles/cmTC_78333.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_78333.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_78333.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_78333
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78333.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_78333.dir/feature_tests.cxx.o  -o cmTC_78333 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_e1669/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_e1669.dir/build.make CMakeFiles/cmTC_e1669.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_e1669.dir/feature_tests.cxx.o
+/apps/mingo/bin/g++    -std=c++11 -o CMakeFiles/cmTC_e1669.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e1669
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1669.dir/link.txt --verbose=1
+/apps/mingo/bin/g++       -rdynamic CMakeFiles/cmTC_e1669.dir/feature_tests.cxx.o  -o cmTC_e1669 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -826,17 +782,17 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_de29a/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_de29a.dir/build.make CMakeFiles/cmTC_de29a.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_de29a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_de29a.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_de29a
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de29a.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_de29a.dir/feature_tests.cxx.o  -o cmTC_de29a 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_5aa45/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_5aa45.dir/build.make CMakeFiles/cmTC_5aa45.dir/build
+gmake[1]: 进入目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_5aa45.dir/feature_tests.cxx.o
+/apps/mingo/bin/g++    -std=c++98 -o CMakeFiles/cmTC_5aa45.dir/feature_tests.cxx.o -c /home/mingo/workspace/mingo_server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5aa45
+/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5aa45.dir/link.txt --verbose=1
+/apps/mingo/bin/g++       -rdynamic CMakeFiles/cmTC_5aa45.dir/feature_tests.cxx.o  -o cmTC_5aa45 
+gmake[1]: 离开目录“/home/mingo/workspace/mingo_server/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -896,31 +852,3 @@ gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
-Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake cmTC_3ed0d/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_3ed0d.dir/build.make CMakeFiles/cmTC_3ed0d.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3ed0d.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3ed0d.dir/CheckIncludeFile.c.o   -c /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3ed0d
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ed0d.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3ed0d.dir/CheckIncludeFile.c.o  -o cmTC_3ed0d 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake cmTC_d7324/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_d7324.dir/build.make CMakeFiles/cmTC_d7324.dir/build
-gmake[1]: Entering directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d7324.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d7324.dir/CheckFunctionExists.c.o   -c /apps/mingo/share/cmake-3.14/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d7324
-/apps/mingo/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7324.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d7324.dir/CheckFunctionExists.c.o  -o cmTC_d7324 -lpthread 
-gmake[1]: Leaving directory '/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/CMakeTmp'
-
-

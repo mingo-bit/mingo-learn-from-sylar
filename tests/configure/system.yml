@@ -1,0 +1,9 @@
+logs:
+    - name: system
+      level: error 
+      formatter: "[%d] [%p] [%c] <%f: %l> [T:%t F:%F]%T%m%n"
+      appenders:
+        - type: FileLogAppender
+          level: error 
+          file: /home/mingo/workspace/mingo_server_copy_sylar/system_log.txt
+

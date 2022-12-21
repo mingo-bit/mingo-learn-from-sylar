@@ -1,0 +1,5 @@
+[2022-09-06 14:47:03] [ERROR] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_util.cpp: 7> [T:6208 F:1]	"hhhhh"    ./test_util(_Z21test_backtrace_assertv+0xce) [0x55ad86ff2957]
+    ./test_util(main+0x94) [0x55ad86ff2bd3]
+    /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xd5) [0x7f0dee242565]
+    ./test_util(_start+0x2e) [0x55ad86ff27ce]
+

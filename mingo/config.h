@@ -256,13 +256,13 @@ public:
     ConfigVar(const std::string& name, const T& value, const std::string& description)
         : ConfigVarBase(name, description), m_value(value) {}
 
-    T getValue() const
+    const T getValue() 
     {
         RWLock::ReadLock lock(m_mutex);
         return m_value;
     }
 
-    void setValue(const T value)
+    void setValue(const T& value)
     {
         {
             RWLock::ReadLock lock(m_mutex);

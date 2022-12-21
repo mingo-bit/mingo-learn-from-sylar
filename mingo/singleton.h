@@ -1,6 +1,8 @@
 #ifndef MINGO_SINGLETON_H_
 #define MINGO_SINGLETON_H_
 
+#include <memory>
+
 namespace mingo {
 
 template<class T, class X = void, int N = 0>

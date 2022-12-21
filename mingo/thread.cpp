@@ -4,9 +4,11 @@
 
 namespace mingo {
 
+// 当前线程
 static thread_local Thread* t_thread = nullptr;
+// 当前线程名称
 static thread_local std::string t_thread_name = "UNKNOW";
-static mingo::Logger::ptr thread_logger = GET_LOGGER("system");
+static mingo::Logger::ptr s_thread_logger = GET_LOGGER("system");
 
 Semaphore::Semaphore(uint32_t count){
     if (sem_init(&m_semaphore, 0, count)) {
@@ -36,7 +38,7 @@ Thread::Thread(std::function<void()> cb, const std::string& name) : m_cb(cb), m_
     }
     int rt = pthread_create(&m_thread, nullptr, &Thread::run, this);
     if (rt) {
-        LOG_ERROR(thread_logger, "pthread create error. rt = " + std::to_string(rt) + "name: " + name);
+        LOG_ERROR(s_thread_logger, "pthread create error. rt = " + std::to_string(rt) + "name: " + name);
         throw std::logic_error("pthread create error");
     }
     m_semaphore.wait();
@@ -52,7 +54,7 @@ void Thread::join() {
     if (m_thread) {
         int rt = pthread_join(m_thread, nullptr);
         if (rt) {
-            LOG_ERROR(thread_logger, "pthread_join error. rt = " + std::to_string(rt) + "name: " + m_name);
+            LOG_ERROR(s_thread_logger, "pthread_join error. rt = " + std::to_string(rt) + "name: " + m_name);
             throw std::logic_error("pthread_join error");
         }
         m_thread = 0;

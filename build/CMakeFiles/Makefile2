@@ -62,45 +62,193 @@ RM = /apps/mingo/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server_copy_sylar
+CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server_copy_sylar/build
+CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_thread.dir
+# Target rules for target CMakeFiles/test_daemon.dir
 
 # All Build rule for target.
-CMakeFiles/test_thread.dir/all: CMakeFiles/mingo.dir/all
-	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/depend
-	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=8,9 "Built target test_thread"
-.PHONY : CMakeFiles/test_thread.dir/all
+CMakeFiles/test_daemon.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/depend
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=39,40 "Built target test_daemon"
+.PHONY : CMakeFiles/test_daemon.dir/all
 
 # Include target in all.
-all: CMakeFiles/test_thread.dir/all
+all: CMakeFiles/test_daemon.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_thread.dir/rule
+CMakeFiles/test_daemon.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_daemon.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_daemon.dir/rule
 
 # Convenience name for target.
-test_thread: CMakeFiles/test_thread.dir/rule
+test_daemon: CMakeFiles/test_daemon.dir/rule
 
-.PHONY : test_thread
-
-# clean rule for target.
-CMakeFiles/test_thread.dir/clean:
-	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/clean
-.PHONY : CMakeFiles/test_thread.dir/clean
+.PHONY : test_daemon
 
 # clean rule for target.
-clean: CMakeFiles/test_thread.dir/clean
+CMakeFiles/test_daemon.dir/clean:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/clean
+.PHONY : CMakeFiles/test_daemon.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_daemon.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_http_connection.dir
+
+# All Build rule for target.
+CMakeFiles/test_http_connection.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/depend
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=49,50 "Built target test_http_connection"
+.PHONY : CMakeFiles/test_http_connection.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_http_connection.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_http_connection.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_http_connection.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_http_connection.dir/rule
+
+# Convenience name for target.
+test_http_connection: CMakeFiles/test_http_connection.dir/rule
+
+.PHONY : test_http_connection
+
+# clean rule for target.
+CMakeFiles/test_http_connection.dir/clean:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/clean
+.PHONY : CMakeFiles/test_http_connection.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_http_connection.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/http_server.dir
+
+# All Build rule for target.
+CMakeFiles/http_server.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/depend
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=3,4 "Built target http_server"
+.PHONY : CMakeFiles/http_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/http_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/http_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/http_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/http_server.dir/rule
+
+# Convenience name for target.
+http_server: CMakeFiles/http_server.dir/rule
+
+.PHONY : http_server
+
+# clean rule for target.
+CMakeFiles/http_server.dir/clean:
+	$(MAKE) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/clean
+.PHONY : CMakeFiles/http_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/http_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_uri.dir
+
+# All Build rule for target.
+CMakeFiles/test_uri.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/depend
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=65,66 "Built target test_uri"
+.PHONY : CMakeFiles/test_uri.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_uri.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_uri.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_uri.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_uri.dir/rule
+
+# Convenience name for target.
+test_uri: CMakeFiles/test_uri.dir/rule
+
+.PHONY : test_uri
+
+# clean rule for target.
+CMakeFiles/test_uri.dir/clean:
+	$(MAKE) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/clean
+.PHONY : CMakeFiles/test_uri.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_uri.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/echo_server.dir
+
+# All Build rule for target.
+CMakeFiles/echo_server.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/depend
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=1,2 "Built target echo_server"
+.PHONY : CMakeFiles/echo_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/echo_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/echo_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/echo_server.dir/rule
+
+# Convenience name for target.
+echo_server: CMakeFiles/echo_server.dir/rule
+
+.PHONY : echo_server
+
+# clean rule for target.
+CMakeFiles/echo_server.dir/clean:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/clean
+.PHONY : CMakeFiles/echo_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/echo_server.dir/clean
 
 .PHONY : clean
 
@@ -111,7 +259,7 @@ clean: CMakeFiles/test_thread.dir/clean
 CMakeFiles/test_config_to_log.dir/all: CMakeFiles/mingo.dir/all
 	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/depend
 	$(MAKE) -f CMakeFiles/test_config_to_log.dir/build.make CMakeFiles/test_config_to_log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=6,7 "Built target test_config_to_log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=37,38 "Built target test_config_to_log"
 .PHONY : CMakeFiles/test_config_to_log.dir/all
 
 # Include target in all.
@@ -121,9 +269,9 @@ all: CMakeFiles/test_config_to_log.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_config_to_log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_config_to_log.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_config_to_log.dir/rule
 
 # Convenience name for target.
@@ -148,7 +296,7 @@ clean: CMakeFiles/test_config_to_log.dir/clean
 CMakeFiles/mingo.dir/all:
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/depend
 	$(MAKE) -f CMakeFiles/mingo.dir/build.make CMakeFiles/mingo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target mingo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target mingo"
 .PHONY : CMakeFiles/mingo.dir/all
 
 # Include target in all.
@@ -158,9 +306,9 @@ all: CMakeFiles/mingo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mingo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mingo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
 .PHONY : CMakeFiles/mingo.dir/rule
 
 # Convenience name for target.
@@ -175,6 +323,524 @@ CMakeFiles/mingo.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/mingo.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_thread.dir
+
+# All Build rule for target.
+CMakeFiles/test_thread.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/depend
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=63,64 "Built target test_thread"
+.PHONY : CMakeFiles/test_thread.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_thread.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_thread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_thread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_thread.dir/rule
+
+# Convenience name for target.
+test_thread: CMakeFiles/test_thread.dir/rule
+
+.PHONY : test_thread
+
+# clean rule for target.
+CMakeFiles/test_thread.dir/clean:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/clean
+.PHONY : CMakeFiles/test_thread.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_thread.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_env.dir
+
+# All Build rule for target.
+CMakeFiles/test_env.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/depend
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=41,42 "Built target test_env"
+.PHONY : CMakeFiles/test_env.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_env.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_env.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_env.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_env.dir/rule
+
+# Convenience name for target.
+test_env: CMakeFiles/test_env.dir/rule
+
+.PHONY : test_env
+
+# clean rule for target.
+CMakeFiles/test_env.dir/clean:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/clean
+.PHONY : CMakeFiles/test_env.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_env.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_util.dir
+
+# All Build rule for target.
+CMakeFiles/test_util.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/depend
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=67,68 "Built target test_util"
+.PHONY : CMakeFiles/test_util.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_util.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_util.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_util.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_util.dir/rule
+
+# Convenience name for target.
+test_util: CMakeFiles/test_util.dir/rule
+
+.PHONY : test_util
+
+# clean rule for target.
+CMakeFiles/test_util.dir/clean:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/clean
+.PHONY : CMakeFiles/test_util.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_util.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_fiber.dir
+
+# All Build rule for target.
+CMakeFiles/test_fiber.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/depend
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=43,44 "Built target test_fiber"
+.PHONY : CMakeFiles/test_fiber.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_fiber.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_fiber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_fiber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_fiber.dir/rule
+
+# Convenience name for target.
+test_fiber: CMakeFiles/test_fiber.dir/rule
+
+.PHONY : test_fiber
+
+# clean rule for target.
+CMakeFiles/test_fiber.dir/clean:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/clean
+.PHONY : CMakeFiles/test_fiber.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_fiber.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_http_server.dir
+
+# All Build rule for target.
+CMakeFiles/test_http_server.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/depend
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=53,54 "Built target test_http_server"
+.PHONY : CMakeFiles/test_http_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_http_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_http_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_http_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_http_server.dir/rule
+
+# Convenience name for target.
+test_http_server: CMakeFiles/test_http_server.dir/rule
+
+.PHONY : test_http_server
+
+# clean rule for target.
+CMakeFiles/test_http_server.dir/clean:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/clean
+.PHONY : CMakeFiles/test_http_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_http_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_address.dir
+
+# All Build rule for target.
+CMakeFiles/test_address.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/depend
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=33,34 "Built target test_address"
+.PHONY : CMakeFiles/test_address.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_address.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_address.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_address.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_address.dir/rule
+
+# Convenience name for target.
+test_address: CMakeFiles/test_address.dir/rule
+
+.PHONY : test_address
+
+# clean rule for target.
+CMakeFiles/test_address.dir/clean:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/clean
+.PHONY : CMakeFiles/test_address.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_address.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_scheduler.dir
+
+# All Build rule for target.
+CMakeFiles/test_scheduler.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/depend
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=57,58 "Built target test_scheduler"
+.PHONY : CMakeFiles/test_scheduler.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_scheduler.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_scheduler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_scheduler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_scheduler.dir/rule
+
+# Convenience name for target.
+test_scheduler: CMakeFiles/test_scheduler.dir/rule
+
+.PHONY : test_scheduler
+
+# clean rule for target.
+CMakeFiles/test_scheduler.dir/clean:
+	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/clean
+.PHONY : CMakeFiles/test_scheduler.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_scheduler.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_iomanager.dir
+
+# All Build rule for target.
+CMakeFiles/test_iomanager.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/depend
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=55,56 "Built target test_iomanager"
+.PHONY : CMakeFiles/test_iomanager.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_iomanager.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_iomanager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_iomanager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_iomanager.dir/rule
+
+# Convenience name for target.
+test_iomanager: CMakeFiles/test_iomanager.dir/rule
+
+.PHONY : test_iomanager
+
+# clean rule for target.
+CMakeFiles/test_iomanager.dir/clean:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/clean
+.PHONY : CMakeFiles/test_iomanager.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_iomanager.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_tcp_server.dir
+
+# All Build rule for target.
+CMakeFiles/test_tcp_server.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/depend
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=61,62 "Built target test_tcp_server"
+.PHONY : CMakeFiles/test_tcp_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_tcp_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_tcp_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_tcp_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_tcp_server.dir/rule
+
+# Convenience name for target.
+test_tcp_server: CMakeFiles/test_tcp_server.dir/rule
+
+.PHONY : test_tcp_server
+
+# clean rule for target.
+CMakeFiles/test_tcp_server.dir/clean:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/clean
+.PHONY : CMakeFiles/test_tcp_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_tcp_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_http_parser.dir
+
+# All Build rule for target.
+CMakeFiles/test_http_parser.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/depend
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=51,52 "Built target test_http_parser"
+.PHONY : CMakeFiles/test_http_parser.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_http_parser.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_http_parser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_http_parser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_http_parser.dir/rule
+
+# Convenience name for target.
+test_http_parser: CMakeFiles/test_http_parser.dir/rule
+
+.PHONY : test_http_parser
+
+# clean rule for target.
+CMakeFiles/test_http_parser.dir/clean:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/clean
+.PHONY : CMakeFiles/test_http_parser.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_http_parser.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_hook.dir
+
+# All Build rule for target.
+CMakeFiles/test_hook.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/depend
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=45,46 "Built target test_hook"
+.PHONY : CMakeFiles/test_hook.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_hook.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_hook.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_hook.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_hook.dir/rule
+
+# Convenience name for target.
+test_hook: CMakeFiles/test_hook.dir/rule
+
+.PHONY : test_hook
+
+# clean rule for target.
+CMakeFiles/test_hook.dir/clean:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/clean
+.PHONY : CMakeFiles/test_hook.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_hook.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_socket.dir
+
+# All Build rule for target.
+CMakeFiles/test_socket.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/depend
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=59,60 "Built target test_socket"
+.PHONY : CMakeFiles/test_socket.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_socket.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_socket.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_socket.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_socket.dir/rule
+
+# Convenience name for target.
+test_socket: CMakeFiles/test_socket.dir/rule
+
+.PHONY : test_socket
+
+# clean rule for target.
+CMakeFiles/test_socket.dir/clean:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/clean
+.PHONY : CMakeFiles/test_socket.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_socket.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_bytearray.dir
+
+# All Build rule for target.
+CMakeFiles/test_bytearray.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/depend
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=35,36 "Built target test_bytearray"
+.PHONY : CMakeFiles/test_bytearray.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_bytearray.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_bytearray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_bytearray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_bytearray.dir/rule
+
+# Convenience name for target.
+test_bytearray: CMakeFiles/test_bytearray.dir/rule
+
+.PHONY : test_bytearray
+
+# clean rule for target.
+CMakeFiles/test_bytearray.dir/clean:
+	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/clean
+.PHONY : CMakeFiles/test_bytearray.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_bytearray.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_http.dir
+
+# All Build rule for target.
+CMakeFiles/test_http.dir/all: CMakeFiles/mingo.dir/all
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/depend
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=47,48 "Built target test_http"
+.PHONY : CMakeFiles/test_http.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_http.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_http.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_http.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingo/workspace/mingo_server/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_http.dir/rule
+
+# Convenience name for target.
+test_http: CMakeFiles/test_http.dir/rule
+
+.PHONY : test_http
+
+# clean rule for target.
+CMakeFiles/test_http.dir/clean:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/clean
+.PHONY : CMakeFiles/test_http.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_http.dir/clean
 
 .PHONY : clean
 

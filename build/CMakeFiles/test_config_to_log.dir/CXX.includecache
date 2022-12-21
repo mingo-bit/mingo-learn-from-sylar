@@ -38,6 +38,14 @@ functional
 thread.h
 .././mingo/thread.h
 
+.././mingo/fiber.h
+memory
+-
+functional
+-
+ucontext.h
+-
+
 .././mingo/log.h
 string.h
 -
@@ -68,7 +76,11 @@ util.h
 thread.h
 .././mingo/thread.h
 
+.././mingo/noncopyable.h
+
 .././mingo/singleton.h
+memory
+-
 
 .././mingo/thread.h
 thread
@@ -85,6 +97,8 @@ semaphore.h
 -
 atomic
 -
+noncopyable.h
+.././mingo/noncopyable.h
 
 .././mingo/util.h
 pthread.h
@@ -95,14 +109,24 @@ sys/syscall.h
 -
 sys/types.h
 -
+sys/time.h
+-
 unistd.h
 -
+execinfo.h
+-
+fiber.h
+.././mingo/fiber.h
+string
+-
+vector
+-
 
-/home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp
+/home/mingo/workspace/mingo_server/tests/test_config_to_log.cpp
 iostream
 -
 mingo/log.h
-/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/log.h
+/home/mingo/workspace/mingo_server/tests/mingo/log.h
 mingo/config.h
-/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/config.h
+/home/mingo/workspace/mingo_server/tests/mingo/config.h
 

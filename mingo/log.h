@@ -1,5 +1,4 @@
 #ifndef MINGO_LOG_H_
-
 #define MINGO_LOG_H_
 
 #include <string.h>
@@ -18,7 +17,7 @@
 #include "thread.h"
 
 #define MAKE_LOG_EVENT(level, message) \
-    std::make_shared<mingo::LogEvent>(__FILE__, __LINE__, mingo::getThreadId(), mingo::getFiberId(), time(0), message, level)
+    std::make_shared<mingo::LogEvent>(__FILE__, __LINE__, mingo::getThreadId(), mingo::getFiberId(), time(0), message, level, mingo::Thread::GetName())
 
 #define LOG_LEVEL(logger, level, message) \
     logger->log(MAKE_LOG_EVENT(level, message));
@@ -56,9 +55,11 @@ public:
 
     LogEvent(const std::string& filename, uint32_t line, uint32_t thread_id, 
             uint32_t fiber_id, time_t time, const std::string& content,
-            LogLevel::Level level = LogLevel::DEBUG)
+            LogLevel::Level level = LogLevel::DEBUG, 
+            const std::string& thread_name = "default")
         : m_level(level), m_file(filename), m_line(line), 
-        m_threadId(thread_id), m_fiberId(fiber_id), m_time(time), m_content(content) {}
+        m_threadId(thread_id), m_fiberId(fiber_id), m_time(time), m_content(content)
+        , m_threadName(thread_name) {}
 
     const std::string& getFile() const { return m_file; }
     uint32_t getLine() const { return m_line; }
@@ -67,6 +68,7 @@ public:
     uint32_t getFiberId() const { return m_fiberId; }
     uint32_t getTime() const { return m_time; }
     const std::string& getContent() const { return m_content; }
+    const std::string& getThreadName() const { return m_threadName; }
     void setContent(const std::string& content) { m_content  = content; }
     LogLevel::Level getLevel() const { return m_level; }
     
@@ -81,6 +83,7 @@ private:
     uint32_t m_fiberId = 0; //协程id
     uint32_t m_time = 0; //时间戳
     std::string m_content;
+    std::string m_threadName; //线程名称
 };
 
 class Logger;
@@ -202,7 +205,7 @@ public:
     typedef std::shared_ptr<LoggerManager> ptr;
 
     LoggerManager();
-    // 传入日志器名称来获取日志器,如果不存在,返回全局日志器
+    // 传入日志器名称来获取日志器
     Logger::ptr getLogger(const std::string& name);
     //获取全局日志器
     Logger::ptr getGlobal() { return m_global; }

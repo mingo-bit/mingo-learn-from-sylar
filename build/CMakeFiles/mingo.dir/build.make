@@ -46,10 +46,10 @@ RM = /apps/mingo/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server_copy_sylar
+CMAKE_SOURCE_DIR = /home/mingo/workspace/mingo_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server_copy_sylar/build
+CMAKE_BINARY_DIR = /home/mingo/workspace/mingo_server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mingo.dir/depend.make
@@ -62,62 +62,384 @@ include CMakeFiles/mingo.dir/flags.make
 
 CMakeFiles/mingo.dir/mingo/log.cpp.o: CMakeFiles/mingo.dir/flags.make
 CMakeFiles/mingo.dir/mingo/log.cpp.o: ../mingo/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mingo.dir/mingo/log.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/log.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mingo.dir/mingo/log.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/log.cpp.o -c /home/mingo/workspace/mingo_server/mingo/log.cpp
 
 CMakeFiles/mingo.dir/mingo/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/log.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp > CMakeFiles/mingo.dir/mingo/log.cpp.i
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/log.cpp > CMakeFiles/mingo.dir/mingo/log.cpp.i
 
 CMakeFiles/mingo.dir/mingo/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/log.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server_copy_sylar/mingo/log.cpp -o CMakeFiles/mingo.dir/mingo/log.cpp.s
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/log.cpp -o CMakeFiles/mingo.dir/mingo/log.cpp.s
 
 CMakeFiles/mingo.dir/mingo/util.cpp.o: CMakeFiles/mingo.dir/flags.make
 CMakeFiles/mingo.dir/mingo/util.cpp.o: ../mingo/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mingo.dir/mingo/util.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/util.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mingo.dir/mingo/util.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/util.cpp.o -c /home/mingo/workspace/mingo_server/mingo/util.cpp
 
 CMakeFiles/mingo.dir/mingo/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server_copy_sylar/mingo/util.cpp > CMakeFiles/mingo.dir/mingo/util.cpp.i
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/util.cpp > CMakeFiles/mingo.dir/mingo/util.cpp.i
 
 CMakeFiles/mingo.dir/mingo/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server_copy_sylar/mingo/util.cpp -o CMakeFiles/mingo.dir/mingo/util.cpp.s
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/util.cpp -o CMakeFiles/mingo.dir/mingo/util.cpp.s
 
 CMakeFiles/mingo.dir/mingo/config.cpp.o: CMakeFiles/mingo.dir/flags.make
 CMakeFiles/mingo.dir/mingo/config.cpp.o: ../mingo/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mingo.dir/mingo/config.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/config.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mingo.dir/mingo/config.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/config.cpp.o -c /home/mingo/workspace/mingo_server/mingo/config.cpp
 
 CMakeFiles/mingo.dir/mingo/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/config.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp > CMakeFiles/mingo.dir/mingo/config.cpp.i
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/config.cpp > CMakeFiles/mingo.dir/mingo/config.cpp.i
 
 CMakeFiles/mingo.dir/mingo/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/config.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server_copy_sylar/mingo/config.cpp -o CMakeFiles/mingo.dir/mingo/config.cpp.s
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/config.cpp -o CMakeFiles/mingo.dir/mingo/config.cpp.s
+
+CMakeFiles/mingo.dir/mingo/env.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/env.cpp.o: ../mingo/env.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mingo.dir/mingo/env.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/env.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/env.cpp.o -c /home/mingo/workspace/mingo_server/mingo/env.cpp
+
+CMakeFiles/mingo.dir/mingo/env.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/env.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/env.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/env.cpp > CMakeFiles/mingo.dir/mingo/env.cpp.i
+
+CMakeFiles/mingo.dir/mingo/env.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/env.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/env.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/env.cpp -o CMakeFiles/mingo.dir/mingo/env.cpp.s
 
 CMakeFiles/mingo.dir/mingo/thread.cpp.o: CMakeFiles/mingo.dir/flags.make
 CMakeFiles/mingo.dir/mingo/thread.cpp.o: ../mingo/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mingo.dir/mingo/thread.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/thread.cpp.o -c /home/mingo/workspace/mingo_server_copy_sylar/mingo/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mingo.dir/mingo/thread.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/thread.cpp.o -c /home/mingo/workspace/mingo_server/mingo/thread.cpp
 
 CMakeFiles/mingo.dir/mingo/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server_copy_sylar/mingo/thread.cpp > CMakeFiles/mingo.dir/mingo/thread.cpp.i
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/thread.cpp > CMakeFiles/mingo.dir/mingo/thread.cpp.i
 
 CMakeFiles/mingo.dir/mingo/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server_copy_sylar/mingo/thread.cpp -o CMakeFiles/mingo.dir/mingo/thread.cpp.s
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/thread.cpp -o CMakeFiles/mingo.dir/mingo/thread.cpp.s
+
+CMakeFiles/mingo.dir/mingo/fiber.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/fiber.cpp.o: ../mingo/fiber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mingo.dir/mingo/fiber.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/fiber.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/fiber.cpp.o -c /home/mingo/workspace/mingo_server/mingo/fiber.cpp
+
+CMakeFiles/mingo.dir/mingo/fiber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/fiber.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/fiber.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/fiber.cpp > CMakeFiles/mingo.dir/mingo/fiber.cpp.i
+
+CMakeFiles/mingo.dir/mingo/fiber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/fiber.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/fiber.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/fiber.cpp -o CMakeFiles/mingo.dir/mingo/fiber.cpp.s
+
+CMakeFiles/mingo.dir/mingo/scheduler.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/scheduler.cpp.o: ../mingo/scheduler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mingo.dir/mingo/scheduler.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/scheduler.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/scheduler.cpp.o -c /home/mingo/workspace/mingo_server/mingo/scheduler.cpp
+
+CMakeFiles/mingo.dir/mingo/scheduler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/scheduler.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/scheduler.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/scheduler.cpp > CMakeFiles/mingo.dir/mingo/scheduler.cpp.i
+
+CMakeFiles/mingo.dir/mingo/scheduler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/scheduler.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/scheduler.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/scheduler.cpp -o CMakeFiles/mingo.dir/mingo/scheduler.cpp.s
+
+CMakeFiles/mingo.dir/mingo/iomanager.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/iomanager.cpp.o: ../mingo/iomanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mingo.dir/mingo/iomanager.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/iomanager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/iomanager.cpp.o -c /home/mingo/workspace/mingo_server/mingo/iomanager.cpp
+
+CMakeFiles/mingo.dir/mingo/iomanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/iomanager.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/iomanager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/iomanager.cpp > CMakeFiles/mingo.dir/mingo/iomanager.cpp.i
+
+CMakeFiles/mingo.dir/mingo/iomanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/iomanager.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/iomanager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/iomanager.cpp -o CMakeFiles/mingo.dir/mingo/iomanager.cpp.s
+
+CMakeFiles/mingo.dir/mingo/timer.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/timer.cpp.o: ../mingo/timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mingo.dir/mingo/timer.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/timer.cpp.o -c /home/mingo/workspace/mingo_server/mingo/timer.cpp
+
+CMakeFiles/mingo.dir/mingo/timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/timer.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/timer.cpp > CMakeFiles/mingo.dir/mingo/timer.cpp.i
+
+CMakeFiles/mingo.dir/mingo/timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/timer.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/timer.cpp -o CMakeFiles/mingo.dir/mingo/timer.cpp.s
+
+CMakeFiles/mingo.dir/mingo/hook.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/hook.cpp.o: ../mingo/hook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mingo.dir/mingo/hook.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/hook.cpp.o -c /home/mingo/workspace/mingo_server/mingo/hook.cpp
+
+CMakeFiles/mingo.dir/mingo/hook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/hook.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/hook.cpp > CMakeFiles/mingo.dir/mingo/hook.cpp.i
+
+CMakeFiles/mingo.dir/mingo/hook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/hook.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/hook.cpp -o CMakeFiles/mingo.dir/mingo/hook.cpp.s
+
+CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o: ../mingo/fd_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/fd_manager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o -c /home/mingo/workspace/mingo_server/mingo/fd_manager.cpp
+
+CMakeFiles/mingo.dir/mingo/fd_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/fd_manager.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/fd_manager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/fd_manager.cpp > CMakeFiles/mingo.dir/mingo/fd_manager.cpp.i
+
+CMakeFiles/mingo.dir/mingo/fd_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/fd_manager.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/fd_manager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/fd_manager.cpp -o CMakeFiles/mingo.dir/mingo/fd_manager.cpp.s
+
+CMakeFiles/mingo.dir/mingo/address.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/address.cpp.o: ../mingo/address.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mingo.dir/mingo/address.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/address.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/address.cpp.o -c /home/mingo/workspace/mingo_server/mingo/address.cpp
+
+CMakeFiles/mingo.dir/mingo/address.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/address.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/address.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/address.cpp > CMakeFiles/mingo.dir/mingo/address.cpp.i
+
+CMakeFiles/mingo.dir/mingo/address.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/address.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/address.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/address.cpp -o CMakeFiles/mingo.dir/mingo/address.cpp.s
+
+CMakeFiles/mingo.dir/mingo/socket.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/socket.cpp.o: ../mingo/socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mingo.dir/mingo/socket.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/socket.cpp.o -c /home/mingo/workspace/mingo_server/mingo/socket.cpp
+
+CMakeFiles/mingo.dir/mingo/socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/socket.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/socket.cpp > CMakeFiles/mingo.dir/mingo/socket.cpp.i
+
+CMakeFiles/mingo.dir/mingo/socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/socket.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/socket.cpp -o CMakeFiles/mingo.dir/mingo/socket.cpp.s
+
+CMakeFiles/mingo.dir/mingo/bytearray.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/bytearray.cpp.o: ../mingo/bytearray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mingo.dir/mingo/bytearray.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/bytearray.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/bytearray.cpp.o -c /home/mingo/workspace/mingo_server/mingo/bytearray.cpp
+
+CMakeFiles/mingo.dir/mingo/bytearray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/bytearray.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/bytearray.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/bytearray.cpp > CMakeFiles/mingo.dir/mingo/bytearray.cpp.i
+
+CMakeFiles/mingo.dir/mingo/bytearray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/bytearray.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/bytearray.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/bytearray.cpp -o CMakeFiles/mingo.dir/mingo/bytearray.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/http.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/http.cpp.o: ../mingo/http/http.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mingo.dir/mingo/http/http.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/http.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/http.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/http.cpp
+
+CMakeFiles/mingo.dir/mingo/http/http.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/http.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/http.cpp > CMakeFiles/mingo.dir/mingo/http/http.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/http.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/http.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/http.cpp -o CMakeFiles/mingo.dir/mingo/http/http.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o: ../mingo/http/http11_parser.rl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/http11_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/http11_parser.rl.cpp
+
+CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http11_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/http11_parser.rl.cpp > CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http11_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/http11_parser.rl.cpp -o CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o: ../mingo/http/httpclient_parser.rl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/httpclient_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/httpclient_parser.rl.cpp
+
+CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/httpclient_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/httpclient_parser.rl.cpp > CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/httpclient_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/httpclient_parser.rl.cpp -o CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o: ../mingo/http/http_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_parser.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/http_parser.cpp
+
+CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_parser.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/http_parser.cpp > CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_parser.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/http_parser.cpp -o CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.s
+
+CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o: ../mingo/tcp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o -c /home/mingo/workspace/mingo_server/mingo/tcp_server.cpp
+
+CMakeFiles/mingo.dir/mingo/tcp_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/tcp_server.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/tcp_server.cpp > CMakeFiles/mingo.dir/mingo/tcp_server.cpp.i
+
+CMakeFiles/mingo.dir/mingo/tcp_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/tcp_server.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/tcp_server.cpp -o CMakeFiles/mingo.dir/mingo/tcp_server.cpp.s
+
+CMakeFiles/mingo.dir/mingo/stream.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/stream.cpp.o: ../mingo/stream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mingo.dir/mingo/stream.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/stream.cpp.o -c /home/mingo/workspace/mingo_server/mingo/stream.cpp
+
+CMakeFiles/mingo.dir/mingo/stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/stream.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/stream.cpp > CMakeFiles/mingo.dir/mingo/stream.cpp.i
+
+CMakeFiles/mingo.dir/mingo/stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/stream.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/stream.cpp -o CMakeFiles/mingo.dir/mingo/stream.cpp.s
+
+CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o: ../mingo/streams/socket_stream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/streams/socket_stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o -c /home/mingo/workspace/mingo_server/mingo/streams/socket_stream.cpp
+
+CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/streams/socket_stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/streams/socket_stream.cpp > CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.i
+
+CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/streams/socket_stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/streams/socket_stream.cpp -o CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o: ../mingo/http/http_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/http_server.cpp
+
+CMakeFiles/mingo.dir/mingo/http/http_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/http_server.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/http_server.cpp > CMakeFiles/mingo.dir/mingo/http/http_server.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/http_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/http_server.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/http_server.cpp -o CMakeFiles/mingo.dir/mingo/http/http_server.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o: ../mingo/http/http_session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_session.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/http_session.cpp
+
+CMakeFiles/mingo.dir/mingo/http/http_session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/http_session.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_session.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/http_session.cpp > CMakeFiles/mingo.dir/mingo/http/http_session.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/http_session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/http_session.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_session.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/http_session.cpp -o CMakeFiles/mingo.dir/mingo/http/http_session.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o: ../mingo/http/servlet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/servlet.cpp
+
+CMakeFiles/mingo.dir/mingo/http/servlet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/servlet.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/servlet.cpp > CMakeFiles/mingo.dir/mingo/http/servlet.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/servlet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/servlet.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/servlet.cpp -o CMakeFiles/mingo.dir/mingo/http/servlet.cpp.s
+
+CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o: ../mingo/http/http_connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_connection.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o -c /home/mingo/workspace/mingo_server/mingo/http/http_connection.cpp
+
+CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_connection.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/http/http_connection.cpp > CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.i
+
+CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/http/http_connection.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/http/http_connection.cpp -o CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.s
+
+CMakeFiles/mingo.dir/mingo/uri.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/uri.cpp.o: ../mingo/uri.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mingo.dir/mingo/uri.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/uri.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/uri.cpp.o -c /home/mingo/workspace/mingo_server/mingo/uri.cpp
+
+CMakeFiles/mingo.dir/mingo/uri.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/uri.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/uri.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/uri.cpp > CMakeFiles/mingo.dir/mingo/uri.cpp.i
+
+CMakeFiles/mingo.dir/mingo/uri.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/uri.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/uri.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/uri.cpp -o CMakeFiles/mingo.dir/mingo/uri.cpp.s
+
+CMakeFiles/mingo.dir/mingo/daemon.cpp.o: CMakeFiles/mingo.dir/flags.make
+CMakeFiles/mingo.dir/mingo/daemon.cpp.o: ../mingo/daemon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mingo.dir/mingo/daemon.cpp.o"
+	/apps/mingo/bin/g++  $(CXX_DEFINES) -D__FILE__=\"mingo/daemon.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mingo.dir/mingo/daemon.cpp.o -c /home/mingo/workspace/mingo_server/mingo/daemon.cpp
+
+CMakeFiles/mingo.dir/mingo/daemon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mingo.dir/mingo/daemon.cpp.i"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/daemon.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingo/workspace/mingo_server/mingo/daemon.cpp > CMakeFiles/mingo.dir/mingo/daemon.cpp.i
+
+CMakeFiles/mingo.dir/mingo/daemon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mingo.dir/mingo/daemon.cpp.s"
+	/apps/mingo/bin/g++ $(CXX_DEFINES) -D__FILE__=\"mingo/daemon.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingo/workspace/mingo_server/mingo/daemon.cpp -o CMakeFiles/mingo.dir/mingo/daemon.cpp.s
 
 # Object files for target mingo
 mingo_OBJECTS = \
 "CMakeFiles/mingo.dir/mingo/log.cpp.o" \
 "CMakeFiles/mingo.dir/mingo/util.cpp.o" \
 "CMakeFiles/mingo.dir/mingo/config.cpp.o" \
-"CMakeFiles/mingo.dir/mingo/thread.cpp.o"
+"CMakeFiles/mingo.dir/mingo/env.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/thread.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/fiber.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/scheduler.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/iomanager.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/timer.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/hook.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/address.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/socket.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/bytearray.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/http.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/stream.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/uri.cpp.o" \
+"CMakeFiles/mingo.dir/mingo/daemon.cpp.o"
 
 # External object files for target mingo
 mingo_EXTERNAL_OBJECTS =
@@ -125,10 +447,33 @@ mingo_EXTERNAL_OBJECTS =
 ../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/log.cpp.o
 ../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/util.cpp.o
 ../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/config.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/env.cpp.o
 ../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/thread.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/fiber.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/scheduler.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/iomanager.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/timer.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/hook.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/fd_manager.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/address.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/socket.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/bytearray.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/http.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/http11_parser.rl.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/httpclient_parser.rl.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/http_parser.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/tcp_server.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/stream.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/streams/socket_stream.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/http_server.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/http_session.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/servlet.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/http/http_connection.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/uri.cpp.o
+../lib/libmingo.so: CMakeFiles/mingo.dir/mingo/daemon.cpp.o
 ../lib/libmingo.so: CMakeFiles/mingo.dir/build.make
 ../lib/libmingo.so: CMakeFiles/mingo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library ../lib/libmingo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mingo/workspace/mingo_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX shared library ../lib/libmingo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mingo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -141,6 +486,6 @@ CMakeFiles/mingo.dir/clean:
 .PHONY : CMakeFiles/mingo.dir/clean
 
 CMakeFiles/mingo.dir/depend:
-	cd /home/mingo/workspace/mingo_server_copy_sylar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingo/workspace/mingo_server_copy_sylar /home/mingo/workspace/mingo_server_copy_sylar /home/mingo/workspace/mingo_server_copy_sylar/build /home/mingo/workspace/mingo_server_copy_sylar/build /home/mingo/workspace/mingo_server_copy_sylar/build/CMakeFiles/mingo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mingo/workspace/mingo_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingo/workspace/mingo_server /home/mingo/workspace/mingo_server /home/mingo/workspace/mingo_server/build /home/mingo/workspace/mingo_server/build /home/mingo/workspace/mingo_server/build/CMakeFiles/mingo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mingo.dir/depend
 

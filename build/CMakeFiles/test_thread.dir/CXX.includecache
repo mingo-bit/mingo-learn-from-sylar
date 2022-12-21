@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+.././mingo/fiber.h
+memory
+-
+functional
+-
+ucontext.h
+-
+
 .././mingo/log.h
 string.h
 -
@@ -36,7 +44,11 @@ util.h
 thread.h
 .././mingo/thread.h
 
+.././mingo/noncopyable.h
+
 .././mingo/singleton.h
+memory
+-
 
 .././mingo/thread.h
 thread
@@ -53,6 +65,8 @@ semaphore.h
 -
 atomic
 -
+noncopyable.h
+.././mingo/noncopyable.h
 
 .././mingo/util.h
 pthread.h
@@ -63,16 +77,26 @@ sys/syscall.h
 -
 sys/types.h
 -
+sys/time.h
+-
 unistd.h
 -
+execinfo.h
+-
+fiber.h
+.././mingo/fiber.h
+string
+-
+vector
+-
 
-/home/mingo/workspace/mingo_server_copy_sylar/tests/test_thread.cpp
+/home/mingo/workspace/mingo_server/tests/test_thread.cpp
 unistd.h
 -
 mingo/log.h
-/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/log.h
+/home/mingo/workspace/mingo_server/tests/mingo/log.h
 mingo/thread.h
-/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/thread.h
+/home/mingo/workspace/mingo_server/tests/mingo/thread.h
 mingo/util.h
-/home/mingo/workspace/mingo_server_copy_sylar/tests/mingo/util.h
+/home/mingo/workspace/mingo_server/tests/mingo/util.h
 

@@ -1,3 +1,15 @@
 [2022-09-04 22:38:48] [INFO] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp: 15> --- [T:2488 F:1]	hello system
 [2022-09-04 22:40:23] [INFO] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp: 15> --- [T:2555 F:1]	hello system
 [2022-09-05 21:08:35] [INFO] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp: 15> --- [T:7120 F:1]	hello system
+[2022-09-05 21:12:38] [INFO] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp: 15> --- [T:7200 F:1]	hello system
+[2022-09-06 14:29:09] [INFO] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_config_to_log.cpp: 15> --- [T:5635 F:1]	hello system
+[2022-09-06 14:37:47] [ERROR] [system] </home/mingo/workspace/mingo_server_copy_sylar/tests/test_util.cpp: 7> --- [T:5876 F:1]	"hhhhh"    ./test_util(_Z21test_backtrace_assertv+0xce) [0x5588c89d4957]
+    ./test_util(main+0x94) [0x5588c89d4bd3]
+    /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xd5) [0x7f9c959e1565]
+    ./test_util(_start+0x2e) [0x5588c89d47ce]
+
+[2022-09-10 08:00:53] [INFO] [system] <tests/test_config_to_log.cpp: 15> --- [T:1785 F:0]	hello system
+[2022-09-30 01:52:30] [INFO] [system] <tests/test_config_to_log.cpp: 15> --- [T:11831 F:0]	hello system
+[2022-09-30 01:55:39] [INFO] [system] <tests/test_config_to_log.cpp: 15> --- [T:12198 F:0]	hello system
+[2022-09-30 05:47:58] [INFO] [system] <tests/test_config_to_log.cpp: 15> --- [T:1731 F:0]	hello system
+[2022-09-30 05:48:36] [INFO] [system] <tests/test_config_to_log.cpp: 15> --- [T:1939 F:0]	hello system

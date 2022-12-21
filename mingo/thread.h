@@ -8,15 +8,11 @@
 #include <string>
 #include <semaphore.h>
 #include <atomic>
+#include "noncopyable.h"
 
 namespace mingo {
 
-class Semaphore
-{
-public:
-    Semaphore(const Semaphore&) = delete;
-    Semaphore(const Semaphore&&) = delete;
-    Semaphore& operator=(const Semaphore&) = delete;
+class Semaphore : public Noncopyable {
 public:
     explicit Semaphore(uint32_t count = 0);
     ~Semaphore();
@@ -137,8 +133,7 @@ private:
     bool m_locked;
 };
 
-class Mutex
-{
+class Mutex : public Noncopyable {
 public:
     typedef ScopedLockImpl<Mutex> Lock;
     Mutex()
@@ -166,7 +161,7 @@ private:
 };
 
 //读写锁
-class RWLock {
+class RWLock : public Noncopyable {
 public:
     typedef WriteScopedLockImpl<RWLock> WriteLock;
     typedef ReadScopedLockImpl<RWLock> ReadLock;
@@ -201,7 +196,7 @@ private:
 };
 
 //自旋锁
-class Spinlock {
+class Spinlock : Noncopyable {
 public:
     /// 局部锁
     typedef ScopedLockImpl<Spinlock> Lock;
@@ -227,7 +222,7 @@ private:
 };
 
 // 原子锁
-class CASLock {
+class CASLock : Noncopyable {
 public:
     // 局部锁
     typedef ScopedLockImpl<CASLock> Lock;
@@ -251,7 +246,8 @@ private:
     volatile std::atomic_flag m_mutex;
 };
 
-class NullMutex {
+//空锁
+class NullMutex : public Noncopyable {
 public:
     /// 局部锁
     typedef ScopedLockImpl<NullMutex> Lock;
@@ -263,7 +259,7 @@ public:
     void unlock() {}
 };
 
-class NullRWMutex {
+class NullRWMutex : public Noncopyable {
 public:
     /// 局部读锁
     typedef ReadScopedLockImpl<NullMutex> ReadLock;
